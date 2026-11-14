@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tổng Ôn Lý Thuyết Nền Tảng · ĐGNL BCA 2027 | BCA Midnight Class</title>
+<meta name="description" content="Lớp online ôn ĐGNL Bộ Công an cho 2K9 (kết hợp HSA): Toán · Lịch sử · Địa lí · Tiếng Anh, 22:15 mỗi tối, tối đa 35 bạn/buổi. Học thử 2 tuần miễn phí.">
+<meta name="theme-color" content="#1E3A8A">
+<meta property="og:title" content="Tổng Ôn Lý Thuyết Nền Tảng · ĐGNL BCA 2027">
+<meta property="og:description" content="Học thử 2 tuần miễn phí, đủ 4 môn. 65.000đ/buổi, từ 2 môn chỉ 55.000đ/buổi/môn.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='1.2' y='1' width='4.5' height='22' rx='1.5' fill='%231E3A8A'/%3E%3Cpath d='M6.1 12.1 Q11.6 4.3 18.9 1.5 Q14.5 8.7 6.1 12.1 Z' fill='%232563EB'/%3E%3Cpath d='M6.1 12.3 Q13.1 9.3 21.5 9.1 Q14.1 14.9 6.1 12.3 Z' fill='%2338BDF8'/%3E%3Cpath d='M6.1 12.5 Q11.5 16.6 15.4 23 Q8.1 19.9 6.1 12.5 Z' fill='%23F59E0B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1E3A8A; --navy-hover:#172554; --royal:#2563EB; --sky:#38BDF8; --sun:#F59E0B; --sun-text:#B45309;
+  --mint:#10B981; --mint-text:#059669; --alert:#DC2626;
+  --canvas:#F8FAFC; --card:#FFFFFF; --border:#E2E8F0; --border-strong:#CBD5E1; --text:#0F172A; --muted:#64748B;
+  --ink:#1E3A8A; --link:#2563EB; --pillar:#1E3A8A;
+  --t-royal:rgba(37,99,235,.08); --t-sky:rgba(56,189,248,.14); --t-sun:rgba(245,158,11,.14); --t-mint:rgba(16,185,129,.12); --t-navy:rgba(30,58,138,.06);
+  --hero-a:rgba(56,189,248,.20); --hero-b:rgba(37,99,235,.10);
+  --shadow:0 1px 2px rgba(15,23,42,.05),0 8px 24px rgba(15,23,42,.06);
+  --shadow-lg:0 2px 4px rgba(15,23,42,.06),0 18px 48px rgba(30,58,138,.12);
+  --r:16px; --r-sm:10px;
+  --f-head:"Be Vietnam Pro","Plus Jakarta Sans",system-ui,sans-serif;
+  --f-body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-wordmark:"Plus Jakarta Sans","Be Vietnam Pro",sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --canvas:#0B0F19; --card:#0F172A; --border:#1E293B; --border-strong:#334155; --text:#F8FAFC; --muted:#94A3B8;
+    --ink:#38BDF8; --link:#60A5FA; --pillar:#38BDF8; --sun-text:#FBBF24; --mint-text:#34D399;
+    --t-royal:rgba(96,165,250,.12); --t-sky:rgba(56,189,248,.14); --t-sun:rgba(251,191,36,.12); --t-mint:rgba(52,211,153,.12); --t-navy:rgba(56,189,248,.06);
+    --hero-a:rgba(56,189,248,.14); --hero-b:rgba(37,99,235,.14);
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35); --shadow-lg:0 18px 48px rgba(0,0,0,.5);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --canvas:#0B0F19; --card:#0F172A; --border:#1E293B; --border-strong:#334155; --text:#F8FAFC; --muted:#94A3B8;
+  --ink:#38BDF8; --link:#60A5FA; --pillar:#38BDF8; --sun-text:#FBBF24; --mint-text:#34D399;
+  --t-royal:rgba(96,165,250,.12); --t-sky:rgba(56,189,248,.14); --t-sun:rgba(251,191,36,.12); --t-mint:rgba(52,211,153,.12); --t-navy:rgba(56,189,248,.06);
+  --hero-a:rgba(56,189,248,.14); --hero-b:rgba(37,99,235,.14);
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35); --shadow-lg:0 18px 48px rgba(0,0,0,.5);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--canvas);color:var(--text);font:16px/1.6 var(--f-body);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--f-head);line-height:1.25;margin:0;letter-spacing:-.01em}
+p{margin:0}
+a{color:var(--link)}
+img,svg{display:block}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--sky);outline-offset:2px;border-radius:6px}
+section{scroll-margin-top:84px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 22px;border-radius:12px;border:1.5px solid transparent;font:600 16px/1.2 var(--f-body);text-decoration:none;cursor:pointer;transition:background-color .1s ease-out,border-color .1s ease-out,transform .1s ease-out;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--royal);color:#fff}
+.btn-primary:hover{background:var(--navy)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-hover)}
+.btn-ghost{background:var(--card);color:var(--ink);border-color:var(--border-strong)}
+.btn-ghost:hover{border-color:var(--royal)}
+.btn-sm{min-height:44px;padding:10px 16px;font-size:15px}
+.btn:active{transform:translateY(1px)}
+
+/* top notice + header */
+.notice{background:var(--navy);color:#fff;font-size:14px;text-align:center;padding:8px 16px}
+.notice b{color:#FBBF24;font-weight:600}
+header.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--card) 88%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--border)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text);flex:none}
+.lockup{display:flex;align-items:flex-end;height:30px}
+.lockup svg{width:30px;height:30px}
+.lockup span{font:800 25px/1 var(--f-wordmark);color:var(--ink);margin-left:-1px;letter-spacing:-.02em;padding-bottom:1px}
+.brand .div{width:1px;height:24px;background:var(--border-strong)}
+.brand .sub{font:500 15px/1.15 var(--f-head);color:var(--muted)}
+.brand .sub b{display:block;color:var(--text);font-weight:600}
+nav.menu{display:flex;gap:4px;margin-left:auto}
+nav.menu a{color:var(--text);text-decoration:none;font-weight:500;font-size:15px;padding:10px 12px;border-radius:10px;min-height:44px;display:flex;align-items:center}
+nav.menu a:hover{background:var(--t-royal);color:var(--link)}
+.top .cta{margin-left:8px}
+@media (max-width:1020px){nav.menu{display:none}.top .cta{margin-left:auto}}
+@media (max-width:520px){.brand .sub{display:none}.brand .div{display:none}.top .cta .long{display:none}}
+.top .cta .short{display:none}@media (max-width:520px){.top .cta .short{display:inline}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:56px 0 48px;background:
+  radial-gradient(900px 420px at 85% -10%,var(--hero-a),transparent 70%),
+  radial-gradient(700px 380px at -10% 110%,var(--hero-b),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;background:var(--t-sun);color:var(--sun-text);font-weight:600;font-size:14px}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--sun);display:block}
+.hero h1{font-size:clamp(32px,4.6vw,50px);font-weight:800;margin:18px 0 16px;color:var(--text)}
+.hero h1 em{font-style:normal;color:var(--ink);display:block}
+.hero .lead{font-size:18px;color:var(--muted);max-width:56ch}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 22px}
+.hero .actions .btn{min-height:54px;padding:14px 24px;font-size:17px}
+.checks{display:flex;flex-wrap:wrap;gap:8px 20px;padding:0;margin:0;list-style:none;color:var(--muted);font-size:15px}
+.checks li{display:flex;align-items:center;gap:8px}
+.checks svg{width:18px;height:18px;color:var(--mint-text);flex:none}
+
+/* booking-style schedule card */
+.book{background:var(--card);border:1px solid var(--border);border-radius:22px;box-shadow:var(--shadow-lg);padding:22px}
+.book-h{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.book-h h3{font-size:19px}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;font-size:13px;font-weight:600;white-space:nowrap}
+.pill-mint{background:var(--t-mint);color:var(--mint-text)}
+.pill-sun{background:var(--t-sun);color:var(--sun-text)}
+.pill-royal{background:var(--t-royal);color:var(--link)}
+.pill-muted{background:var(--t-navy);color:var(--muted)}
+.pill i{width:7px;height:7px;border-radius:50%;background:currentColor;display:block}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.day{border:1px solid var(--border);border-radius:12px;padding:10px 4px;text-align:center;min-height:92px;display:flex;flex-direction:column;align-items:center;gap:6px;background:var(--canvas)}
+.day b{font:600 13px/1 var(--f-head);color:var(--muted)}
+.chip{font-size:12px;font-weight:600;padding:4px 6px;border-radius:8px;line-height:1.2;width:100%}
+.c-toan{background:var(--t-royal);color:var(--link)}
+.c-su{background:var(--t-sun);color:var(--sun-text)}
+.c-dia{background:var(--t-mint);color:var(--mint-text)}
+.c-anh{background:var(--t-sky);color:var(--ink)}
+.book-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.meta{display:flex;gap:10px;align-items:flex-start;padding:12px;border-radius:12px;background:var(--t-navy)}
+.meta svg{width:20px;height:20px;color:var(--link);flex:none;margin-top:2px}
+.meta b{display:block;font:600 15px/1.3 var(--f-head)}
+.meta span{font-size:13px;color:var(--muted)}
+.book .btn{width:100%}
+.book small{display:block;text-align:center;color:var(--muted);font-size:13px;margin-top:10px}
+
+/* stats */
+.stats{margin-top:-8px;padding-bottom:16px}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);background:var(--card);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow)}
+.stat{padding:20px 22px;border-left:1px solid var(--border)}
+.stat:first-child{border-left:0}
+.stat b{display:block;font:800 28px/1.1 var(--f-head);color:var(--ink)}
+.stat span{font-size:14px;color:var(--muted)}
+
+/* sections */
+.sec{padding:72px 0}
+.sec.alt{background:var(--card);border-block:1px solid var(--border)}
+.sec-h{max-width:720px;margin-bottom:36px}
+.sec-h .kicker{font:600 14px/1 var(--f-head);color:var(--link);text-transform:uppercase;letter-spacing:.08em}
+.sec-h h2{font-size:clamp(26px,3.2vw,36px);font-weight:800;margin:10px 0 12px}
+.sec-h p{color:var(--muted);font-size:17px}
+.center{text-align:center;margin-inline:auto}
+
+/* features */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feat{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:22px;transition:border-color .1s ease-out}
+.sec.alt .feat{background:var(--canvas)}
+.feat:hover{border-color:var(--border-strong)}
+.ico{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:var(--t-royal);color:var(--link);margin-bottom:14px}
+.ico svg{width:24px;height:24px}
+.ico.sun{background:var(--t-sun);color:var(--sun-text)}
+.ico.mint{background:var(--t-mint);color:var(--mint-text)}
+.ico.sky{background:var(--t-sky);color:var(--ink)}
+.feat h3{font-size:18px;margin-bottom:6px}
+.feat p{color:var(--muted);font-size:15px}
+
+/* teachers */
+.team{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.doc{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:24px;display:grid;grid-template-columns:92px 1fr;gap:20px;box-shadow:var(--shadow);position:relative}
+.ava{width:92px;height:92px;border-radius:24px;background:linear-gradient(140deg,var(--navy),var(--royal) 60%,var(--sky));display:grid;place-items:center;color:#fff;font:800 30px/1 var(--f-head);overflow:hidden}
+.ava img{width:100%;height:100%;object-fit:cover}
+.doc h3{font-size:21px}
+.doc .role{color:var(--link);font-weight:600;font-size:15px;margin:2px 0 10px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.tag{font-size:13px;font-weight:600;padding:5px 10px;border-radius:999px;background:var(--t-navy);color:var(--text);border:1px solid var(--border)}
+.star{display:flex;gap:12px;align-items:center;background:var(--t-sun);border-radius:14px;padding:12px 14px;margin-bottom:12px}
+.star b{font:800 26px/1 var(--f-head);color:var(--sun-text);white-space:nowrap}
+.star span{font-size:14px;line-height:1.4;color:var(--text)}
+.star span strong{display:block}
+.creds{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.creds li{display:grid;grid-template-columns:20px 1fr;gap:10px;font-size:15px}
+.creds svg{width:20px;height:20px;color:var(--mint-text);margin-top:2px}
+.creds em{font-style:normal;color:var(--muted)}
+.doc .note{margin-top:12px;font-size:14px;color:var(--muted);border-top:1px dashed var(--border);padding-top:12px}
+.results{margin-top:24px;display:grid;grid-template-columns:1.2fr 1fr;gap:20px;align-items:stretch}
+.res-card{background:var(--navy);color:#fff;border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:14px}
+.res-card h3{font-size:20px}
+.res-card p{color:rgba(255,255,255,.82);font-size:15px}
+.res-row{display:flex;flex-wrap:wrap;gap:10px}
+.res-row span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);padding:8px 12px;border-radius:12px;font-weight:600;font-size:15px}
+.res-row span b{color:#FBBF24}
+
+/* roadmap */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.tab{min-height:46px;padding:10px 18px;border-radius:12px;border:1.5px solid var(--border);background:var(--card);color:var(--text);font:600 16px/1 var(--f-body);cursor:pointer;display:flex;align-items:center;gap:8px;transition:border-color .1s ease-out,background-color .1s ease-out}
+.tab small{font-weight:500;color:var(--muted);font-size:13px}
+.tab[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.tab[aria-selected="true"] small{color:rgba(255,255,255,.75)}
+.rm-sum{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;color:var(--muted);font-size:15px}
+.timeline{position:relative;display:grid;gap:16px;padding-left:34px}
+.timeline:before{content:"";position:absolute;left:12px;top:10px;bottom:10px;width:2px;background:var(--border)}
+.phase{position:relative;background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:20px 22px;box-shadow:var(--shadow)}
+.phase:before{content:attr(data-n);position:absolute;left:-34px;top:18px;width:26px;height:26px;border-radius:50%;background:var(--royal);color:#fff;font:700 13px/26px var(--f-head);text-align:center;box-shadow:0 0 0 4px var(--canvas)}
+.phase.soon{background:transparent;border-style:dashed;box-shadow:none}
+.phase.soon:before{background:var(--border-strong);color:var(--text)}
+.phase-h{display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:space-between}
+.phase h3{font-size:19px}
+.phase .desc{color:var(--muted);font-size:15px;margin:6px 0 12px}
+.groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+details.grp{border:1px solid var(--border);border-radius:12px;background:var(--canvas)}
+details.grp summary{list-style:none;cursor:pointer;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px;font-weight:600;min-height:44px}
+details.grp summary::-webkit-details-marker{display:none}
+details.grp summary span{font-weight:500;color:var(--muted);font-size:13px;white-space:nowrap}
+details.grp summary:after{content:"";width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);margin-left:4px;flex:none;transition:transform .1s ease-out}
+details.grp[open] summary:after{transform:rotate(-135deg)}
+details.grp ol{margin:0;padding:0 14px 12px 34px;font-size:15px}
+details.grp li{margin:4px 0}
+details.grp li em{display:block;font-style:normal;color:var(--muted);font-size:13px}
+.rm-note{margin-top:16px;color:var(--muted);font-size:14px}
+
+/* schedule + format */
+.split{display:grid;grid-template-columns:1.15fr .85fr;gap:20px}
+.panel{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:24px;box-shadow:var(--shadow)}
+.sec.alt .panel{background:var(--canvas);box-shadow:none}
+.panel h3{font-size:20px;margin-bottom:14px}
+table.sched{width:100%;border-collapse:separate;border-spacing:0;font-size:15px}
+.sched th,.sched td{padding:12px 10px;border-bottom:1px solid var(--border);text-align:left}
+.sched th{font:600 13px/1 var(--f-head);color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.sched td:first-child{font-weight:600;white-space:nowrap}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px;vertical-align:middle}
+.list-ico{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.list-ico li{display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:start}
+.list-ico .ico{width:40px;height:40px;margin:0;border-radius:10px}
+.list-ico .ico svg{width:20px;height:20px}
+.list-ico b{display:block;font-family:var(--f-head);font-weight:600}
+.list-ico span{color:var(--muted);font-size:15px}
+
+/* pricing */
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+.price{background:var(--card);border:1.5px solid var(--border);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:12px;position:relative}
+.price.best{border-color:var(--royal);box-shadow:var(--shadow-lg)}
+.price .badge{position:absolute;top:-13px;left:24px;background:#2563EB;color:#fff;box-shadow:0 0 0 3px var(--card,#fff)}.price .badge i{background:#fff}
+.price h3{font-size:18px}
+.price .amt{font:800 40px/1 var(--f-head);color:var(--ink)}
+.price .amt small{font:500 16px var(--f-body);color:var(--muted)}
+.price p{color:var(--muted);font-size:15px}
+.price .creds{margin-top:4px}
+.price .btn{margin-top:auto}
+.value{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.value-hero{border-radius:20px;padding:28px;background:linear-gradient(135deg,var(--navy),var(--royal));color:#fff;position:relative;overflow:hidden}
+.value-hero:after{content:"";position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;border-radius:50%;background:rgba(56,189,248,.25)}
+.value-hero h3{font-size:24px;margin-bottom:12px;position:relative;z-index:1}
+.value-hero p{color:rgba(255,255,255,.88);position:relative;z-index:1;margin-bottom:10px}
+.value-hero p:last-child{margin-bottom:0}
+.clock{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px;position:relative;z-index:1}
+.clock div{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:12px}
+.clock b{display:block;font:800 18px/1.2 var(--f-head);color:#FBBF24}
+.clock span{font-size:13px;color:rgba(255,255,255,.85)}
+.rules{display:grid;gap:12px}
+.rule{display:grid;grid-template-columns:40px 1fr;gap:12px;padding:16px;border:1px solid var(--border);border-radius:14px;background:var(--card)}
+.rule .ico{width:40px;height:40px;margin:0;border-radius:10px}
+.rule .ico svg{width:20px;height:20px}
+.rule b{font-family:var(--f-head);font-weight:600;display:block}
+.rule span{color:var(--muted);font-size:15px}
+.example{margin-top:18px;padding:16px 18px;border-radius:14px;background:var(--t-royal);font-size:15px}
+.example b{color:var(--ink)}
+
+/* scholarship */
+.scholar{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.sch-card{border-radius:20px;padding:26px;border:1.5px solid var(--sun);background:linear-gradient(180deg,var(--t-sun),var(--card) 70%)}
+.sch-card h3{font-size:22px;margin:10px 0}
+.sch-card p{color:var(--text)}
+.weights{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px}
+.weights div{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px;text-align:center}
+.weights b{display:block;font:800 22px/1 var(--f-head);color:var(--sun-text)}
+.weights span{font-size:12.5px;color:var(--muted)}
+.honor{display:grid;gap:10px}
+.honor-item{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--border);border-radius:14px;background:var(--card)}
+.medal{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--t-sun);color:var(--sun-text);font:800 15px/1 var(--f-head);flex:none}
+.honor-item b{display:block;font-family:var(--f-head)}
+.honor-item span{font-size:14px;color:var(--muted)}
+.empty{padding:22px;border:1.5px dashed var(--border-strong);border-radius:14px;color:var(--muted);text-align:center;font-size:15px}
+.skel{height:64px;border-radius:14px;background:linear-gradient(90deg,var(--border) 0%,var(--canvas) 50%,var(--border) 100%);background-size:200% 100%;animation:sk 1.4s linear infinite}
+@keyframes sk{to{background-position:-200% 0}}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s}
+.step{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:24px;position:relative}
+.sec.alt .step{background:var(--canvas)}
+.step:before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:12px;background:var(--navy);color:#fff;display:grid;place-items:center;font:800 18px/1 var(--f-head);margin-bottom:14px}
+.step h3{font-size:18px;margin-bottom:6px}
+.step p{color:var(--muted);font-size:15px}
+
+/* faq */
+.faq{max-width:860px;margin-inline:auto;display:grid;gap:10px}
+.faq details{background:var(--card);border:1px solid var(--border);border-radius:14px}
+.faq summary{cursor:pointer;list-style:none;padding:16px 18px;font:600 17px/1.4 var(--f-head);display:flex;justify-content:space-between;gap:14px;align-items:center;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";font:500 24px/1 var(--f-body);color:var(--link);flex:none}
+.faq details[open] summary:after{content:"–"}
+.faq details p{padding:0 18px 16px;color:var(--muted)}
+
+/* final cta */
+.final{padding:64px 0}
+.final .box{border-radius:28px;padding:44px;background:radial-gradient(600px 300px at 90% 0%,rgba(56,189,248,.35),transparent 70%),var(--navy);color:#fff;display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:center}
+.final h2{font-size:clamp(26px,3vw,34px);font-weight:800;margin-bottom:10px}
+.final p{color:rgba(255,255,255,.85)}
+.final .actions{display:flex;flex-direction:column;gap:12px}
+.final .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+.final .btn-ghost:hover{border-color:#fff}
+.final .btn-primary{background:#fff;color:var(--navy)}
+.final .btn-primary:hover{background:#E2E8F0}
+
+footer{padding:36px 0 110px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:24px}
+footer a{color:var(--muted)}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:flex-end;align-content:start}
+footer .links a,footer .links button{min-height:44px;display:inline-flex;align-items:center}
+.linkbtn{background:none;border:0;padding:0;color:var(--muted);font:inherit;text-decoration:underline;cursor:pointer}
+
+/* floating + mobile bar */
+.zalo-fab{position:fixed;right:18px;bottom:22px;z-index:45;display:flex;align-items:center;gap:8px;background:var(--royal);color:#fff;text-decoration:none;font-weight:600;padding:12px 16px;border-radius:999px;box-shadow:var(--shadow-lg);min-height:48px}
+.zalo-fab svg{width:22px;height:22px}
+.mbar{display:none}
+@media (max-width:760px){
+  .zalo-fab{bottom:84px;padding:12px}
+  .zalo-fab span{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:44;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--card);border-top:1px solid var(--border);box-shadow:0 -6px 20px rgba(15,23,42,.08)}
+  .mbar .btn{min-height:48px;padding:10px;font-size:15px}
+}
+
+/* dialog / forms */
+dialog.reg{border:0;padding:0;border-radius:22px;width:min(680px,100% - 24px);max-height:min(92vh,960px);background:var(--card);color:var(--text);box-shadow:var(--shadow-lg)}
+dialog.reg::backdrop{background:rgba(15,23,42,.55)}
+dialog.reg[open]{animation:pop .2s var(--ease)}
+@keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.dlg{display:flex;flex-direction:column;max-height:inherit}
+.dlg-h{padding:20px 22px 14px;border-bottom:1px solid var(--border);display:flex;gap:12px;align-items:flex-start;justify-content:space-between}
+.dlg-h h2{font-size:22px}
+.dlg-h p{color:var(--muted);font-size:14.5px;margin-top:4px}
+.x{width:44px;height:44px;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--text);cursor:pointer;display:grid;place-items:center;flex:none}
+.x svg{width:20px;height:20px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:6px;border-radius:14px;background:var(--canvas);border:1px solid var(--border);margin:14px 22px 0}
+.seg button{min-height:44px;border:0;border-radius:10px;background:transparent;color:var(--muted);font:600 15px/1.2 var(--f-body);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
+.dlg-b{padding:16px 22px 22px;overflow:auto}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px}
+.f{display:flex;flex-direction:column;gap:6px}
+.f.full{grid-column:1/-1}
+.f label,.f .lbl{font-weight:600;font-size:15px}
+.f label i,.f .lbl i{color:var(--alert);font-style:normal}
+.f .hint{font-size:13px;color:var(--muted)}
+.f input[type=text],.f input[type=tel],.f input[type=email],.f select{min-height:48px;border:1.5px solid var(--border-strong);border-radius:12px;padding:10px 14px;font:16px/1.3 var(--f-body);background:var(--card);color:var(--text);width:100%}
+.f input:focus,.f select:focus{outline:none;border-color:var(--royal);box-shadow:0 0 0 4px var(--t-royal)}
+.f.bad input,.f.bad select,.f.bad .opts{border-color:var(--alert)}
+.err{display:none;font-size:13.5px;color:var(--alert)}
+.f.bad .err{display:block}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px;border:1.5px solid transparent;border-radius:14px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.opt span{display:flex;align-items:center;gap:10px;min-height:52px;padding:10px 14px;border:1.5px solid var(--border-strong);border-radius:12px;font-weight:600;cursor:pointer;background:var(--card)}
+.opt span:before{content:"";width:20px;height:20px;border-radius:6px;border:2px solid var(--border-strong);flex:none;background:var(--card)}
+.opt input[type=radio]+span:before{border-radius:50%}
+.opt span small{display:block;font-weight:500;color:var(--muted);font-size:12.5px}
+.opt input:checked+span{border-color:var(--royal);background:var(--t-royal)}
+.opt input:checked+span:before{background:var(--royal);border-color:var(--royal);box-shadow:inset 0 0 0 3px var(--card)}
+.opt input:focus-visible+span{outline:3px solid var(--sky);outline-offset:2px}
+[hidden]{display:none!important}
+.agree{display:grid;grid-template-columns:24px 1fr;gap:10px;align-items:start;font-size:14.5px;padding:10px 0}
+.agree input{width:22px;height:22px;margin:1px 0 0;accent-color:var(--royal)}
+.estimate{grid-column:1/-1;padding:14px 16px;border-radius:14px;background:var(--t-royal);font-size:15px;display:none}
+.estimate.on{display:block}
+.estimate b{color:var(--ink)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-foot{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.form-foot .btn{width:100%;min-height:54px;font-size:17px}
+.form-foot small{color:var(--muted);font-size:13px;text-align:center}
+.alert{padding:14px 16px;border-radius:14px;font-size:15px;margin-bottom:14px;display:none}
+.alert.on{display:block}
+.alert-err{background:rgba(220,38,38,.08);border:1px solid rgba(220,38,38,.35)}
+.alert-err b{color:var(--alert)}
+.done{text-align:center;padding:12px 4px 4px}
+.done .okic{width:64px;height:64px;border-radius:50%;background:var(--t-mint);color:var(--mint-text);display:grid;place-items:center;margin:4px auto 14px}
+.done .okic svg{width:32px;height:32px}
+.done h3{font-size:22px;margin-bottom:8px}
+.done p{color:var(--muted);margin-bottom:8px}
+.done .btns{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.spin{width:18px;height:18px;border:2.5px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.privacy-b h3{font-size:17px;margin:14px 0 6px}
+.privacy-b p,.privacy-b li{color:var(--muted);font-size:15px}
+.privacy-b ul{padding-left:20px;margin:6px 0}
+
+/* responsive */
+@media (max-width:1020px){
+  .hero .wrap{grid-template-columns:1fr}
+  .book{max-width:620px}
+  .team{grid-template-columns:1fr}
+  .results{grid-template-columns:1fr}
+  .split,.value,.scholar{grid-template-columns:1fr}
+  .final .box{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  .grid3,.prices,.steps{grid-template-columns:1fr}
+  .stats .wrap{grid-template-columns:1fr 1fr}
+  .stat:nth-child(3){border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--border)}
+  footer .wrap{grid-template-columns:1fr}
+  footer .links{justify-content:flex-start}
+}
+@media (max-width:640px){
+  .wrap{width:min(1160px,100% - 28px)}
+  .hero{padding:36px 0 32px}
+  .hero .actions .btn{width:100%}
+  .sec{padding:52px 0}
+  .doc{grid-template-columns:1fr;padding:20px}
+  .ava{width:76px;height:76px;border-radius:20px;font-size:26px}
+  .week{gap:4px}
+  .day{padding:8px 2px;min-height:84px}
+  .chip{font-size:11px;padding:3px 2px}
+  .book-meta{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr}
+  .opts{grid-template-columns:1fr 1fr}
+  dialog.reg{width:100%;max-width:100%;max-height:100%;height:100%;border-radius:0;margin:0}
+  .final .box{padding:28px 22px;border-radius:22px}
+  .weights{grid-template-columns:repeat(2,1fr)}
+  .clock{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-3v10l-6-3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-4-6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12Z"/><path d="M8.5 11h7M8.5 14h4"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m10 8.5 5.5 3.5-5.5 3.5z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><rect x="5" y="11" width="3" height="6" rx="1"/><rect x="10.5" y="7" width="3" height="10" rx="1"/><rect x="16" y="4" width="3" height="13" rx="1"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h13v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 13.5h2"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="kmark" viewBox="0 0 24 24"><rect x="1.2" y="1" width="4.5" height="22" rx="1.5" fill="var(--pillar)"/><path d="M6.1 12.1 Q11.6 4.3 18.9 1.5 Q14.5 8.7 6.1 12.1 Z" fill="#2563EB"/><path d="M6.1 12.3 Q13.1 9.3 21.5 9.1 Q14.1 14.9 6.1 12.3 Z" fill="#38BDF8"/><path d="M6.1 12.5 Q11.5 16.6 15.4 23 Q8.1 19.9 6.1 12.5 Z" fill="#F59E0B"/></symbol>
+</svg>
+
+<div class="notice"><b>Lứa mới khai giảng <span data-k="khaiGiang">tháng 11/2026</span></b> · Học thử 2 tuần miễn phí, được học đủ 4 môn</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="KiN · BCA Midnight Class — về đầu trang">
+      <span class="lockup" aria-hidden="true"><svg><use href="#kmark"/></svg><span>iN</span></span>
+      <span class="div" aria-hidden="true"></span>
+      <span class="sub"><b>BCA Midnight Class</b>Ôn thi ĐGNL 2K9</span>
+    </a>
+    <nav class="menu" aria-label="Mục lục">
+      <a href="#doi-ngu">Đội ngũ</a>
+      <a href="#lo-trinh">Lộ trình</a>
+      <a href="#lich-hoc">Lịch học</a>
+      <a href="#hoc-phi">Học phí</a>
+      <a href="#hoc-bong">Học bổng</a>
+      <a href="#hoi-dap">Hỏi đáp</a>
+    </nav>
+    <button class="btn btn-primary btn-sm cta" data-open="thu" type="button"><span class="long">Học thử miễn phí</span><span class="short">Học thử</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><i></i>2K9 · Thi ĐGNL BCA 2027 · Kết hợp ôn HSA</span>
+      <h1>Tổng Ôn Lý Thuyết Nền Tảng <em>vững gốc trước khi luyện đề</em></h1>
+      <p class="lead">Lớp online 22:15 mỗi tối với Toán · Lịch sử · Địa lí · Tiếng Anh. Học theo lộ trình rõ ràng, có record, bài tập Azota và người đồng hành giải đáp suốt mùa thi.</p>
+      <div class="actions">
+        <button class="btn btn-primary" data-open="thu" type="button">Học thử 2 tuần · 0đ <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        <button class="btn btn-ghost" data-open="chinhthuc" type="button">Đăng ký chính thức</button>
+      </div>
+      <ul class="checks">
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Không cọc, không ràng buộc</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Học thử như học viên chính thức</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Tối đa 35 bạn/buổi</li>
+      </ul>
+    </div>
+    <aside class="book" aria-label="Lịch học trong tuần">
+      <div class="book-h">
+        <h3>Lịch học mỗi tuần</h3>
+        <span class="pill pill-mint"><i></i>Đang nhận học viên</span>
+      </div>
+      <div class="week" id="week"></div>
+      <div class="book-meta">
+        <div class="meta"><svg aria-hidden="true"><use href="#i-clock"/></svg><div><b>22:15 – 23:45</b><span>90 phút mỗi buổi</span></div></div>
+        <div class="meta"><svg aria-hidden="true"><use href="#i-video"/></svg><div><b>Google Meet</b><span>Có record xem lại</span></div></div>
+      </div>
+      <button class="btn btn-navy" data-open="thu" type="button">Giữ chỗ học thử</button>
+      <small>Điền 1 phút · Nhận link nhóm Zalo và lịch trong 24 giờ</small>
+    </aside>
+  </div>
+</section>
+
+<section class="stats" aria-label="Thông tin nhanh">
+  <div class="wrap">
+    <div class="stat"><b>4 môn</b><span>Toán · Sử · Địa · Anh</span></div>
+    <div class="stat"><b>35 bạn</b><span>Tối đa mỗi buổi học</span></div>
+    <div class="stat"><b>3 năm</b><span>Đồng hành ôn ĐGNL BCA & HSA</span></div>
+    <div class="stat"><b>0đ</b><span>2 tuần học thử, đủ 4 môn</span></div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="sec" id="vi-sao">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="kicker">Vì sao chọn lớp</span>
+      <h2>Học ít mà chắc, đúng thứ đề BCA hỏi</h2>
+      <p>Giai đoạn Nền tảng tập trung vào lý thuyết lõi và dạng bài hay gặp, để khi bước sang luyện đề bạn không còn lỗ hổng kiến thức.</p>
+    </div>
+    <div class="grid3">
+      <div class="feat"><div class="ico"><svg aria-hidden="true"><use href="#i-target"/></svg></div><h3>Bám sát ĐGNL Bộ Công an</h3><p>Lộ trình dựng theo đề BCA, kiến thức nền dùng chung để bạn ôn kết hợp cả HSA.</p></div>
+      <div class="feat"><div class="ico sky"><svg aria-hidden="true"><use href="#i-play"/></svg></div><h3>Bận vẫn không mất bài</h3><p>Mỗi buổi đều có record, tài liệu và bài tập trên Azota để bạn tự học bù.</p></div>
+      <div class="feat"><div class="ico mint"><svg aria-hidden="true"><use href="#i-chat"/></svg></div><h3>Hỏi bài ngoài giờ</h3><p>Bí ở đâu, chụp bài gửi lên nhóm Zalo môn. Thầy/Cô gỡ cho bạn, không chờ đến buổi sau.</p></div>
+      <div class="feat"><div class="ico sun"><svg aria-hidden="true"><use href="#i-users"/></svg></div><h3>Lớp vừa đủ, được để ý</h3><p>Tối đa 35 bạn/buổi để Thầy/Cô theo sát từng người, nhắc bài và sửa lỗi kịp thời.</p></div>
+      <div class="feat"><div class="ico"><svg aria-hidden="true"><use href="#i-chart"/></svg></div><h3>Báo cáo cho phụ huynh</h3><p>Mỗi tháng có báo cáo điểm, chuyên cần, nhận xét để gia đình nắm được tiến bộ của con.</p></div>
+      <div class="feat"><div class="ico sun"><svg aria-hidden="true"><use href="#i-award"/></svg></div><h3>Học bổng mỗi tháng</h3><p>Bạn dẫn đầu mỗi môn được miễn 100% học phí môn đó trong tháng.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="sec alt" id="doi-ngu">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="kicker">Đội ngũ giảng dạy</span>
+      <h2>Người dạy đã đi qua đúng kỳ thi bạn sắp thi</h2>
+      <p>Mỗi Thầy/Cô phụ trách đúng môn mạnh nhất của mình, và đều từng tự ôn, tự thi ĐGNL.</p>
+    </div>
+    <div class="team" id="team"></div>
+    <div class="results">
+      <div class="res-card">
+        <h3>Kết quả học trò những mùa trước</h3>
+        <p>3 năm đồng hành ôn ĐGNL, trọng tâm là BCA. Các bạn đạt từ 70 đến hơn 80 điểm BCA và đỗ vào:</p>
+        <div class="res-row"><span>T01</span><span>T02</span><span>T04</span><span>T05</span></div>
+        <p>Với HSA, nhiều bạn đạt <b style="color:#FBBF24">107 – 117/150</b>.</p>
+      </div>
+      <div class="panel">
+        <h3>Đội ngũ phân công thế nào?</h3>
+        <ul class="list-ico">
+          <li><span class="ico"><svg aria-hidden="true"><use href="#i-target"/></svg></span><div><b>Toán</b><span>Anh Thanh và chị Hoa</span></div></li>
+          <li><span class="ico sun"><svg aria-hidden="true"><use href="#i-book"/></svg></span><div><b>Lịch sử · Địa lí</b><span>Anh Thanh</span></div></li>
+          <li><span class="ico sky"><svg aria-hidden="true"><use href="#i-chat"/></svg></span><div><b>Tiếng Anh</b><span>Chị Thu Hương và anh Quang Minh cùng dạy</span></div></li>
+          <li><span class="ico mint"><svg aria-hidden="true"><use href="#i-check"/></svg></span><div><b>Giải đáp thêm Lý · Hóa</b><span>Anh Thanh hỗ trợ khi bạn cần</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="sec" id="lo-trinh">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="kicker">Lộ trình học</span>
+      <h2>Đi từ nền tảng, đến tổng ôn và luyện đề</h2>
+      <p>Bạn đang xem giai đoạn <b>Nền tảng</b> (mở từ <span data-k="khaiGiang">tháng 11/2026</span>). Giai đoạn tổng ôn và luyện đề sẽ mở tiếp theo khi lớp đi hết phần lý thuyết.</p>
+    </div>
+    <div class="tabs" role="tablist" id="rm-tabs" aria-label="Chọn môn"></div>
+    <div id="rm-panel" role="tabpanel" aria-live="polite"></div>
+    <p class="rm-note">Số buổi là ước tính, có thể điều chỉnh theo tiến độ chung của lớp. Bài đã học luôn có record để bạn vào sau vẫn theo kịp.</p>
+  </div>
+</section>
+
+<!-- SCHEDULE + FORMAT -->
+<section class="sec alt" id="lich-hoc">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="kicker">Lịch học & hình thức</span>
+      <h2>Mỗi tối một môn, học xong vẫn kịp ngủ</h2>
+      <p>Tất cả học online qua Google Meet lúc 22:15. Mọi lứa học chung lớp, nên bạn vào lúc nào cũng có bạn đồng hành.</p>
+    </div>
+    <div class="split">
+      <div class="panel">
+        <h3>Thời khóa biểu</h3>
+        <div style="overflow-x:auto">
+          <table class="sched" id="sched">
+            <thead><tr><th scope="col">Môn</th><th scope="col">Buổi trong tuần</th><th scope="col">Giờ</th><th scope="col">Người dạy</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Cách lớp vận hành</h3>
+        <ul class="list-ico">
+          <li><span class="ico"><svg aria-hidden="true"><use href="#i-video"/></svg></span><div><b>Học trực tiếp trên Meet</b><span>Vào bằng đúng Gmail đã đăng ký để không phải chờ duyệt.</span></div></li>
+          <li><span class="ico sky"><svg aria-hidden="true"><use href="#i-play"/></svg></span><div><b>Record + tài liệu từng buổi</b><span>Vắng buổi nào, xem lại buổi đó.</span></div></li>
+          <li><span class="ico mint"><svg aria-hidden="true"><use href="#i-book"/></svg></span><div><b>Bài tập về nhà trên Azota</b><span>Có hạn nộp, được chấm và chữa.</span></div></li>
+          <li><span class="ico sun"><svg aria-hidden="true"><use href="#i-chat"/></svg></span><div><b>Nhóm Zalo theo môn</b><span>Thông báo, link học và hỏi bài ngoài giờ.</span></div></li>
+          <li><span class="ico"><svg aria-hidden="true"><use href="#i-shield"/></svg></span><div><b>Theo dõi sát sao</b><span>Cảnh báo sớm khi thiếu bài hay vắng nhiều, báo phụ huynh khi cần.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="sec" id="hoc-phi">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="kicker">Học phí</span>
+      <h2>Rõ ràng, tính theo buổi, càng nhiều môn càng nhẹ</h2>
+      <p>Không đóng trọn khóa trước. Đầu mỗi tháng bạn nhận tin nhắn ghi rõ số buổi từng môn và số tiền.</p>
+    </div>
+    <div class="prices">
+      <div class="price">
+        <span class="pill pill-mint" style="align-self:flex-start"><i></i>Bắt đầu ở đây</span>
+        <h3>Học thử</h3>
+        <div class="amt">0đ <small>/ 2 tuần</small></div>
+        <p>Học y như học viên chính thức, được đăng ký cả 4 môn.</p>
+        <ul class="creds">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Vào nhóm Zalo, học Meet, làm bài Azota</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Không cọc, không ràng buộc</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Không có hạn chót đăng ký</span></li>
+        </ul>
+        <button class="btn btn-ghost" data-open="thu" type="button">Đăng ký học thử</button>
+      </div>
+      <div class="price">
+        <h3>Học 1 môn</h3>
+        <div class="amt"><span data-k="gia1">65.000đ</span> <small>/ buổi</small></div>
+        <p>Phù hợp khi bạn chỉ cần củng cố một môn.</p>
+        <ul class="creds">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Mỗi buổi 90 phút + record</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Bài tập và chữa bài trên Azota</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Hỏi bài ngoài giờ qua Zalo</span></li>
+        </ul>
+        <button class="btn btn-ghost" data-open="chinhthuc" type="button">Đăng ký chính thức</button>
+      </div>
+      <div class="price best">
+        <span class="pill pill-royal badge"><i></i>Tiết kiệm nhất</span>
+        <h3>Từ 2 môn trở lên</h3>
+        <div class="amt"><span data-k="gia2">55.000đ</span> <small>/ buổi / môn</small></div>
+        <p>Tiết kiệm 10.000đ mỗi buổi cho <b>tất cả</b> các môn bạn học.</p>
+        <ul class="creds">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Đủ quyền lợi như gói 1 môn</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Thầy/Cô nhìn được bức tranh tổ hợp của bạn</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Xét học bổng ở từng môn</span></li>
+        </ul>
+        <button class="btn btn-primary" data-open="chinhthuc" type="button">Đăng ký chính thức</button>
+      </div>
+    </div>
+
+    <div class="value">
+      <div class="value-hero">
+        <h3>Học phí không chỉ trả cho 90 phút</h3>
+        <p>Buổi học trên Meet chỉ là lúc bạn nhận kiến thức. Phần lớn tiến bộ đến lúc bạn tự làm bài, và đó cũng là lúc dễ bỏ cuộc nhất: một câu bí, không ai hỏi, để đó rồi quên.</p>
+        <p>Ở lớp này, khoảng thời gian đó có người đi cùng. Bạn chụp bài gửi lên nhóm Zalo môn hoặc nhắn riêng, Thầy/Cô giải thích đến khi hiểu. Hỏi bao nhiêu cũng được, không tính thêm tiền.</p>
+        <div class="clock">
+          <div><b>90 phút</b><span>học trực tiếp mỗi buổi</span></div>
+          <div><b>Record</b><span>xem lại không giới hạn</span></div>
+          <div><b>Ngoài giờ</b><span>hỏi bài, phản hồi <span data-k="phanHoi">trong ngày</span></span></div>
+        </div>
+      </div>
+      <div>
+        <div class="rules">
+          <div class="rule"><span class="ico"><svg aria-hidden="true"><use href="#i-calendar"/></svg></span><div><b>Tính theo buổi lớp thực dạy</b><span>Buổi lớp nghỉ (lễ, Thầy/Cô báo nghỉ) không tính tiền.</span></div></div>
+          <div class="rule"><span class="ico sun"><svg aria-hidden="true"><use href="#i-play"/></svg></span><div><b>Buổi bạn vắng vẫn được tính</b><span>Vì lớp vẫn diễn ra và bạn vẫn có record, tài liệu, bài tập để học bù và hỏi lại.</span></div></div>
+          <div class="rule"><span class="ico mint"><svg aria-hidden="true"><use href="#i-wallet"/></svg></span><div><b>Đóng theo tháng, từ ngày 15 đến 20</b><span>Chuyển khoản; tin nhắn học phí ghi rõ số buổi từng môn.</span></div></div>
+        </div>
+        <div class="example">Ví dụ tháng 12/2026: Toán 9 buổi + Lịch sử 9 buổi = 18 buổi × 55.000đ = <b>990.000đ</b>.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHOLARSHIP -->
+<section class="sec alt" id="hoc-bong">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="kicker">Học bổng & vinh danh</span>
+      <h2>Cố gắng của bạn được ghi nhận mỗi tháng</h2>
+    </div>
+    <div class="scholar">
+      <div class="sch-card">
+        <span class="pill pill-sun"><i></i>Mỗi tháng · mỗi môn</span>
+        <h3>Miễn 100% học phí môn học</h3>
+        <p>Mỗi tháng, ít nhất một bạn dẫn đầu ở mỗi môn được miễn toàn bộ học phí của môn đó trong tháng. Nếu đồng điểm, các bạn cùng nhận.</p>
+        <div class="weights">
+          <div><b>50%</b><span>Điểm bài tập & kiểm tra</span></div>
+          <div><b>20%</b><span>Nộp bài đúng hạn</span></div>
+          <div><b>20%</b><span>Mức tiến bộ</span></div>
+          <div><b>10%</b><span>Chuyên cần</span></div>
+        </div>
+        <p style="margin-top:14px;font-size:14px;color:var(--muted)">Áp dụng cho học viên chính thức, không còn nợ học phí tháng trước.</p>
+      </div>
+      <div>
+        <h3 style="font-size:19px;margin-bottom:12px">Bảng vinh danh gần nhất</h3>
+        <div class="honor" id="honor"><div class="empty">Bảng vinh danh tháng đầu tiên của lứa mới sẽ cập nhật tại đây.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="sec" id="dang-ky">
+  <div class="wrap">
+    <div class="sec-h center">
+      <span class="kicker">Đăng ký</span>
+      <h2>Bắt đầu chỉ với 3 bước</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Điền phiếu học thử</h3><p>1 phút: họ tên, số Zalo, Gmail và môn muốn học. Có thể chọn cả 4 môn.</p></div>
+      <div class="step"><h3>Nhận link trong 24 giờ</h3><p>Anh Thanh nhắn Zalo gửi link nhóm, lịch và link Meet. Nhớ để Zalo nhận tin nhắn từ người lạ nhé.</p></div>
+      <div class="step"><h3>Học thử 2 tuần rồi quyết định</h3><p>Thấy hợp thì đăng ký chính thức, học phí tính từ buổi đầu sau khi bạn xác nhận.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec alt" id="hoi-dap">
+  <div class="wrap">
+    <div class="sec-h center">
+      <span class="kicker">Hỏi đáp</span>
+      <h2>Những điều bạn và phụ huynh hay hỏi</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Học thử có mất phí hay phải đặt cọc không?</summary><p>Không. 2 tuần học thử hoàn toàn miễn phí, bạn học như học viên chính thức và có thể đăng ký cả 4 môn. Hết 2 tuần, thấy hợp thì đăng ký chính thức, không hợp thì dừng, không ràng buộc gì.</p></details>
+      <details><summary>Em bận không vào học được thì sao?</summary><p>Mỗi buổi đều có record, tài liệu và bài tập. Bạn xem lại và hỏi bài trong nhóm Zalo. Với học viên chính thức, buổi bạn vắng vẫn tính học phí vì lớp vẫn diễn ra và bạn vẫn nhận đủ học liệu.</p></details>
+      <details><summary>Học phí tính và đóng như thế nào?</summary><p>Học 1 môn: 65.000đ/buổi. Từ 2 môn: 55.000đ/buổi cho mỗi môn. Cuối tháng bạn nhận tin nhắn ghi số buổi lớp đã dạy của từng môn, đóng bằng chuyển khoản từ ngày 15 đến 20. Buổi lớp nghỉ không tính tiền.</p></details>
+      <details><summary>Lớp có đông không?</summary><p>Tối đa 35 bạn mỗi buổi để Thầy/Cô theo sát được từng người.</p></details>
+      <details><summary>Em ôn HSA thì có học được không?</summary><p>Được. Kiến thức nền tảng Toán, Sử, Địa, Anh dùng chung cho cả hai kỳ thi. Lớp nhắm vào BCA và có hướng dẫn ôn kết hợp HSA.</p></details>
+      <details><summary>Em cần chuẩn bị gì để học?</summary><p>Một tài khoản Gmail (dùng để vào Meet và Azota, cần trùng với Gmail điền trong phiếu), Zalo để vào nhóm lớp, và máy tính hoặc điện thoại có mạng ổn định.</p></details>
+      <details><summary>Em vào học giữa chừng có theo kịp không?</summary><p>Có. Bài đã học đều có record và tài liệu. Mọi lứa học chung lớp, Thầy/Cô sẽ gợi ý bạn xem lại phần nào trước.</p></details>
+      <details><summary>Thông tin em điền được dùng vào việc gì?</summary><p>Chỉ để xếp lớp, gửi link học, báo cáo học tập và học phí. Xem chi tiết ở mục <button class="linkbtn" type="button" data-privacy>Chính sách thông tin</button>.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div class="box">
+      <div>
+        <h2>Học thử 2 tuần, rồi tự bạn quyết định</h2>
+        <p>Không cọc, không ràng buộc. Điền phiếu 1 phút, nhận link nhóm và lịch học trong 24 giờ.</p>
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary" data-open="thu" type="button">Đăng ký học thử miễn phí</button>
+        <button class="btn btn-ghost" data-open="chinhthuc" type="button">Đăng ký học chính thức</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#top" aria-label="Về đầu trang" style="margin-bottom:12px">
+        <span class="lockup" aria-hidden="true"><svg><use href="#kmark"/></svg><span>iN</span></span>
+        <span class="div" aria-hidden="true"></span>
+        <span class="sub"><b>BCA Midnight Class</b>Dạy tận tâm • Học gắn kết</span>
+      </a>
+      <p>Lớp ôn thi do gia sư tự tổ chức, không trực thuộc Bộ Công an, các học viện, trường Công an nhân dân hay Đại học Quốc gia Hà Nội. Điểm số và thành tích của đội ngũ do người dạy cung cấp.</p>
+    </div>
+    <div class="links">
+      <a href="https://zalo.me/0384409051" data-zalo target="_blank" rel="noopener">Zalo 0384 409 051</a>
+      <a href="https://midnightelite-edu.com/" target="_blank" rel="noopener">midnightelite-edu.com</a>
+      <button class="linkbtn" type="button" data-privacy>Chính sách thông tin</button>
+    </div>
+  </div>
+</footer>
+
+<a class="zalo-fab" href="https://zalo.me/0384409051" data-zalo target="_blank" rel="noopener" aria-label="Nhắn Zalo cho anh Thanh"><svg aria-hidden="true"><use href="#i-chat"/></svg><span>Hỏi qua Zalo</span></a>
+<div class="mbar">
+  <button class="btn btn-primary" data-open="thu" type="button">Học thử 0đ</button>
+  <button class="btn btn-ghost" data-open="chinhthuc" type="button">Đăng ký chính thức</button>
+</div>
+
+<!-- REGISTRATION DIALOG -->
+<dialog class="reg" id="reg" aria-labelledby="reg-title">
+  <div class="dlg">
+    <div class="dlg-h">
+      <div><h2 id="reg-title">Đăng ký học</h2><p id="reg-sub">Điền 1 phút, Thầy/Cô liên hệ qua Zalo trong 24 giờ.</p></div>
+      <button class="x" type="button" data-close aria-label="Đóng"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+    </div>
+    <div class="seg" role="group" aria-label="Hình thức đăng ký">
+      <button type="button" data-mode="thu" aria-pressed="true">Học thử 2 tuần · 0đ</button>
+      <button type="button" data-mode="chinhthuc" aria-pressed="false">Học chính thức</button>
+    </div>
+    <div class="dlg-b">
+      <div class="alert alert-err" id="f-err" role="alert"></div>
+
+      <form id="f-thu" novalidate data-mode="thu">
+        <div class="fgrid">
+          <div class="f full"><label for="t-ten">Họ và tên của bạn <i>*</i></label><input id="t-ten" name="hoTen" type="text" autocomplete="name" maxlength="80" required><span class="err">Bạn nhập đầy đủ họ tên có dấu nhé.</span></div>
+          <div class="f"><label for="t-sdt">Số điện thoại có Zalo <i>*</i></label><input id="t-sdt" name="sdt" type="tel" inputmode="numeric" autocomplete="tel" maxlength="14" required><span class="hint">Số của bạn hoặc phụ huynh.</span><span class="err">Số điện thoại gồm 10 chữ số, bắt đầu bằng 0.</span></div>
+          <div class="f"><label for="t-gmail">Gmail <i>*</i></label><input id="t-gmail" name="gmail" type="email" autocomplete="email" maxlength="80" required><span class="hint">Dùng để vào Meet và Azota.</span><span class="err">Gmail chưa đúng định dạng, ví dụ tenban@gmail.com.</span></div>
+          <div class="f"><label for="t-truong">Trường đang học</label><input id="t-truong" name="truong" type="text" maxlength="100" placeholder="VD: THPT Chu Văn An"></div>
+          <div class="f"><label for="t-khoi">Bạn là</label><select id="t-khoi" name="khoi"><option>Khối 12 (2K9)</option><option>Khối 11</option><option>Khối 10</option><option>Thí sinh tự do</option></select></div>
+          <div class="f full"><span class="lbl" id="t-mon-l">Môn muốn học thử <i>*</i></span><div class="opts" role="group" aria-labelledby="t-mon-l">
+            <label class="opt"><input type="checkbox" name="mon" value="Toán"><span>Toán</span></label>
+            <label class="opt"><input type="checkbox" name="mon" value="Sử"><span>Lịch sử</span></label>
+            <label class="opt"><input type="checkbox" name="mon" value="Địa"><span>Địa lí</span></label>
+            <label class="opt"><input type="checkbox" name="mon" value="Anh"><span>Tiếng Anh</span></label>
+          </div><span class="hint">Được chọn cả 4 môn.</span><span class="err">Chọn ít nhất 1 môn nhé.</span></div>
+          <div class="f"><label for="t-muc">Mục tiêu</label><select id="t-muc" name="mucTieu"><option>BCA</option><option>BCA + HSA</option><option>HSA</option><option>Chưa chắc</option></select></div>
+          <div class="f"><label for="t-nguon">Bạn biết lớp qua</label><select id="t-nguon" name="nguon"><option value="">Chọn</option><option>Zalo</option><option>Facebook</option><option>TikTok</option><option>Bạn bè giới thiệu</option><option>Khác</option></select></div>
+          <div class="f full"><label class="agree"><input type="checkbox" name="dongY" required><span>Mình đồng ý để lớp lưu thông tin trên nhằm xếp lớp và liên hệ qua Zalo. <button class="linkbtn" type="button" data-privacy>Xem chính sách</button></span></label><span class="err">Bạn cần đồng ý để lớp liên hệ được với bạn.</span>
+            <label class="agree opt-in"><input type="checkbox" name="dongYVinhDanh"><span>(Không bắt buộc) Nếu mình đạt học bổng, lớp được ghi <b>tên viết tắt</b> của mình lên bảng vinh danh trên trang này.</span></label></div>
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        </div>
+        <div class="form-foot"><button class="btn btn-primary" type="submit">Gửi phiếu học thử</button><small>Lưu ý: kiểm tra Zalo không chặn tin nhắn từ người lạ để nhận được link lớp.</small></div>
+      </form>
+
+      <form id="f-chinhthuc" novalidate data-mode="chinhthuc" hidden>
+        <div class="fgrid">
+          <div class="f full"><label for="c-ten">Họ và tên học sinh <i>*</i></label><input id="c-ten" name="hoTen" type="text" autocomplete="name" maxlength="80" required><span class="hint">Viết đúng như trên học bạ, có dấu.</span><span class="err">Bạn nhập đầy đủ họ tên có dấu nhé.</span></div>
+          <div class="f"><label for="c-truong">Trường đang học <i>*</i></label><input id="c-truong" name="truong" type="text" maxlength="100" required placeholder="VD: THPT Chu Văn An"><span class="err">Cho lớp biết trường của bạn nhé.</span></div>
+          <div class="f"><label for="c-khoi">Khối lớp <i>*</i></label><select id="c-khoi" name="khoi" required><option>Khối 12 (2K9)</option><option>Khối 11</option><option>Khối 10</option><option>Thí sinh tự do</option></select></div>
+          <div class="f"><label for="c-sdt">SĐT học sinh <i>*</i></label><input id="c-sdt" name="sdt" type="tel" inputmode="numeric" autocomplete="tel" maxlength="14" required><span class="err">Số điện thoại gồm 10 chữ số, bắt đầu bằng 0.</span></div>
+          <div class="f"><label for="c-gmail">Gmail học sinh <i>*</i></label><input id="c-gmail" name="gmail" type="email" autocomplete="email" maxlength="80" required><span class="hint">Phải trùng Gmail dùng cho Azota và Meet.</span><span class="err">Gmail chưa đúng định dạng, ví dụ tenban@gmail.com.</span></div>
+          <div class="f"><label for="c-ph">Họ tên phụ huynh <i>*</i></label><input id="c-ph" name="phHoTen" type="text" maxlength="80" required><span class="hint">Người trực tiếp theo dõi việc học.</span><span class="err">Nhập họ tên phụ huynh (chữ, không phải số điện thoại).</span></div>
+          <div class="f"><label for="c-phsdt">SĐT phụ huynh (có Zalo) <i>*</i></label><input id="c-phsdt" name="phSdt" type="tel" inputmode="numeric" maxlength="14" required><span class="hint">Để nhận báo cáo học tập và học phí.</span><span class="err">Số điện thoại gồm 10 chữ số, bắt đầu bằng 0.</span></div>
+          <div class="f full"><span class="lbl" id="c-mon-l">Môn đăng ký học <i>*</i></span><div class="opts" role="group" aria-labelledby="c-mon-l">
+            <label class="opt"><input type="checkbox" name="mon" value="Toán"><span>Toán<small>Thứ 3 · Thứ 7</small></span></label>
+            <label class="opt"><input type="checkbox" name="mon" value="Sử"><span>Lịch sử<small>Thứ 4 · Chủ nhật</small></span></label>
+            <label class="opt"><input type="checkbox" name="mon" value="Địa"><span>Địa lí<small>Thứ 6</small></span></label>
+            <label class="opt"><input type="checkbox" name="mon" value="Anh"><span>Tiếng Anh<small>Thứ 2 · Thứ 5</small></span></label>
+          </div><span class="err">Chọn ít nhất 1 môn nhé.</span></div>
+          <div class="estimate" id="estimate" aria-live="polite"></div>
+          <div class="f"><label for="c-muc">Mục tiêu</label><select id="c-muc" name="mucTieu"><option>BCA</option><option>BCA + HSA</option><option>HSA</option><option>Chưa chắc</option></select></div>
+          <div class="f"><label for="c-dathu">Bạn đã học thử chưa?</label><select id="c-dathu" name="daHocThu"><option>Đã học thử</option><option>Chưa, vào học luôn</option></select></div>
+          <div class="f full">
+            <label class="agree"><input type="checkbox" name="noiQuy" required><span>Học sinh và phụ huynh đã đọc <a href="https://drive.google.com/file/d/1EEDYaTLq3BuSFXlCPfcCpx6OrhGqQDsa/view" data-k-href="camKetUrl" target="_blank" rel="noopener">Nội quy & cam kết học tập</a> và đồng ý với nội quy, học phí, lịch học.</span></label>
+            <label class="agree"><input type="checkbox" name="camKet" required><span>Cam kết hoàn thành bài tập, kiểm tra trung thực và đóng học phí đúng hạn (ngày 15–20 hằng tháng).</span></label>
+            <label class="agree"><input type="checkbox" name="dongY" required><span>Đồng ý để lớp lưu thông tin trên nhằm xếp lớp, báo cáo học tập và học phí. <button class="linkbtn" type="button" data-privacy>Xem chính sách</button></span></label>
+            <span class="err">Bạn cần tích đủ 3 ô xác nhận ở trên.</span>
+            <label class="agree opt-in"><input type="checkbox" name="dongYVinhDanh"><span>(Không bắt buộc) Nếu mình đạt học bổng, lớp được ghi <b>tên viết tắt</b> của mình lên bảng vinh danh trên trang này.</span></label>
+          </div>
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        </div>
+        <div class="form-foot"><button class="btn btn-navy" type="submit">Gửi phiếu đăng ký chính thức</button><small>Thầy/Cô sẽ xác nhận qua Zalo trước khi tính học phí.</small></div>
+      </form>
+
+      <div class="done" id="f-done" hidden>
+        <div class="okic"><svg aria-hidden="true"><use href="#i-check"/></svg></div>
+        <h3 id="done-title">Đã nhận phiếu của bạn</h3>
+        <p id="done-text"></p>
+        <p>Nếu sau 24 giờ chưa thấy tin nhắn, bạn nhắn trực tiếp Zalo cho anh Thanh nhé.</p>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://zalo.me/0384409051" data-zalo target="_blank" rel="noopener">Nhắn Zalo cho anh Thanh</a>
+          <button class="btn btn-ghost" type="button" data-close>Xem tiếp trang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="reg" id="privacy" aria-labelledby="pv-title">
+  <div class="dlg">
+    <div class="dlg-h"><div><h2 id="pv-title">Chính sách thông tin</h2><p>Áp dụng cho phiếu đăng ký trên trang này.</p></div><button class="x" type="button" data-close aria-label="Đóng"><svg aria-hidden="true"><use href="#i-x"/></svg></button></div>
+    <div class="dlg-b privacy-b">
+      <h3>Lớp thu thập gì</h3><p>Họ tên, số điện thoại, Gmail, trường, khối lớp, môn học của học sinh; họ tên và số điện thoại phụ huynh (phiếu chính thức).</p>
+      <h3>Dùng để làm gì</h3><ul><li>Xếp lớp, thêm vào nhóm Zalo môn, mời vào Google Meet và lớp Azota.</li><li>Gửi lịch học, báo cáo học tập và học phí cho học sinh, phụ huynh.</li></ul>
+      <h3>Ai được xem, lưu ở đâu</h3><p>Chỉ người dạy của lớp. Thông tin lưu trong Google Sheet riêng của lớp trên dịch vụ Google (máy chủ có thể đặt ở nước ngoài); chỉ dùng thêm Google Meet và Azota để phục vụ việc học. Lớp không bán và không chia sẻ cho bên nào khác.</p>
+      <h3>Vinh danh</h3><p>Chỉ khi bạn tích ô đồng ý riêng (không bắt buộc), bảng vinh danh mới ghi tên viết tắt, môn và tháng của bạn. Bạn rút lại đồng ý bất cứ lúc nào qua Zalo.</p>
+      <h3>Lưu bao lâu, xóa thế nào</h3><p>Lưu trong thời gian bạn học và tối đa 12 tháng sau khi kết thúc. Muốn xem, sửa hoặc xóa thông tin, nhắn Zalo 0384 409 051, lớp xử lý trong 7 ngày.</p>
+      <h3>Học sinh dưới 18 tuổi</h3><p>Với phiếu chính thức, phụ huynh cùng đọc và đồng ý trước khi gửi.</p>
+      <h3>Căn cứ</h3><p>Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 và Nghị định 356/2025/NĐ-CP (hiệu lực từ 01/01/2026). Bạn có quyền biết, đồng ý, rút lại đồng ý, xem, sửa và yêu cầu xóa dữ liệu của mình.</p>
+    </div>
+  </div>
+</dialog>
+
+<script>
+/* ====== CẤU HÌNH — sửa ở đây ====== */
+const CONFIG = {
+  apiUrl: "",                 // Dán URL Web App của Apps Script (…/exec). Để trống = gửi qua Google Form cũ.
+  formUrl: "https://docs.google.com/forms/d/13bZpPYsq0RzglXa95XCFbgD37a6Q7LotEyTh5XtCvxk/viewform",
+  zalo: "0384409051",
+  khaiGiang: "tháng 11/2026",
+  gia1: 65000, gia2: 55000,
+  phanHoi: "trong ngày",
+  camKetUrl: "https://drive.google.com/file/d/1EEDYaTLq3BuSFXlCPfcCpx6OrhGqQDsa/view"
+};
+const SUBJECTS = [
+  {key:"Toán", name:"Toán", cls:"c-toan", days:[3,7], teacher:"Anh Thanh · Chị Hoa", color:"var(--royal)"},
+  {key:"Sử", name:"Lịch sử", cls:"c-su", days:[4,8], teacher:"Anh Thanh", color:"var(--sun)"},
+  {key:"Địa", name:"Địa lí", cls:"c-dia", days:[6], teacher:"Anh Thanh", color:"var(--mint)"},
+  {key:"Anh", name:"Tiếng Anh", cls:"c-anh", days:[2,5], teacher:"Chị Thu Hương · Anh Quang Minh", color:"var(--sky)"}
+];
+const TEAM = [
+  {name:"Nguyễn Phúc Thanh", initials:"PT", photo:"", role:"Phụ trách Toán · Lịch sử · Địa lí",
+   tags:["Toán","Lịch sử","Địa lí","Giải đáp Lý · Hóa · Anh"],
+   star:{big:"112/150", top:"HSA 2024 · top 1% cả nước", sub:"Lần 1: 105/150 (top 3%)"},
+   creds:[["ĐGNL BCA 2024: 73/100", "Tổng điểm xét tuyển 24,3, trên điểm chuẩn T02 vùng 2 (21,48)"],["Tốt nghiệp THPT: 27,9 điểm",""],["3 năm đồng hành ôn ĐGNL BCA & HSA","Học trò đạt 70–80+ BCA, đỗ T01 · T02 · T04 · T05"]],
+   note:"Người lập lộ trình và theo sát từng bạn trong lớp."},
+  {name:"Hoàng Thị Vinh Hoa", initials:"VH", photo:"", role:"Giảng dạy Toán",
+   tags:["Toán","Sư phạm Toán dạy bằng tiếng Anh"],
+   star:{big:"34 triệu", top:"Học bổng Vallet 2026", sub:"Học bổng dành cho sinh viên xuất sắc"},
+   creds:[["Sinh viên Sư phạm Toán học dạy bằng tiếng Anh","Trường ĐH Sư phạm Hà Nội 2"],["Thành viên đội tuyển Olympic Toán",""],["Điểm Toán THPT: 9,0",""]],
+   note:"Cùng anh Thanh phụ trách lớp Toán."},
+  {name:"Nguyễn Thu Hương", initials:"TH", photo:"", role:"Giảng dạy Tiếng Anh",
+   tags:["Tiếng Anh","Học viện Cảnh sát nhân dân (T02)"],
+   star:{big:"86,5", top:"Thủ khoa ĐGNL BCA 2025 của lớp", sub:"Cựu học viên, nay là học viên năm 2 T02"},
+   creds:[["Thủ khoa đầu vào khóa D51, Học viện Cảnh sát nhân dân",""],["IELTS 7.5","Listening 8.5 · Reading 8.5"],["GPA năm nhất 3,7/4,0",""]],
+   note:"Hiểu rõ con đường vào trường Công an vì vừa đi qua đúng kỳ thi này."},
+  {name:"Trần Hà Quang Minh", initials:"QM", photo:"", role:"Giảng dạy Tiếng Anh",
+   tags:["Tiếng Anh","Đồng dạy cùng chị Thu Hương"],
+   star:{big:"8.0", top:"IELTS Overall", sub:"Listening · Reading · Speaking 8.5"},
+   creds:[["HSA 2024: 120/150",""],["Tốt nghiệp THPT: 27,5 điểm",""]],
+   note:"Cùng chị Thu Hương phụ trách lớp Tiếng Anh."}
+];
+const ROADMAP_ROWS = [["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch đại số", "Hàm số lượng giác, phương trình lượng giác", ""], ["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch đại số", "Dãy số, Cấp số cộng, cấp số nhân", "LT + BT (VD)"], ["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch đại số", "Giới hạn dãy số, giới hạn hàm số", "LT (ĐN, công thức) + BT (TH, VD + (VDC))"], ["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch đại số", "Hàm liên tục", "LT + BT (VD) · Thêm VCD của giới hạn"], ["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch đại số", "Phép tính lũy thừa, phép tính logarit", "LT (ĐN, PT, BPT) + BT (VD)"], ["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch đại số", "Hàm số mũ, logarit PT và BPT mũ, logarit", "Giai đoạn luyện đề làm BT (VDC - min max, tính giá trị biểu thức)"], ["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch đại số", "Đạo hàm", "LT (ĐN, CT) + BT ( VD)"], ["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch hình học đo lường · Quan hệ song song", "Hai đường thẳng song song", "LT + BT (VD, (VDC))"], ["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch hình học đo lường · Quan hệ song song", "Đường thẳng song song với mặt phẳng", ""], ["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch hình học đo lường · Quan hệ song song", "Hai mặt phẳng song song", "LT + BT (VD, (VDC))"], ["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch hình học đo lường · Quan hệ vuông góc", "Hai đường thẳng vuông góc", "LT + BT (VD, (VDC))"], ["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch hình học đo lường · Quan hệ vuông góc", "Đường thẳng vuông góc với mặt phẳng", ""], ["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch hình học đo lường · Quan hệ vuông góc", "Hai mặt phẳng vuông góc", "LT + BT (VD, (VDC))"], ["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch hình học đo lường · Quan hệ vuông góc", "Góc", "LT + BT (VD, (VDC))"], ["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch hình học đo lường · Quan hệ vuông góc", "Khoảng cách & thể tích", "LT + BT (VD, (VDC))"], ["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch thống kê, xác suất", "Thống kê", "LT + BT (VD)"], ["Toán", 1, "Back to 11 · Củng cố kiến thức lớp 11", "Ôn lại phần lớp 11 hay xuất hiện trong đề BCA: lượng giác, dãy số, giới hạn, mũ – logarit, đạo hàm, hình không gian, xác suất.", "Đang mở", 16, "Mạch thống kê, xác suất", "Xác suất cổ điển", "LT + BT (VD, (VDC))"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "Tính đơn điệu hàm số - hàm đơn", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "Tính đơn điệu hàm số - tham số m", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "Tính đơn điệu hàm số - hàm hợp", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "Cực trị hàm số - hàm đơn, tham số m", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "Cực trị hàm số - hàm hợp", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "Cực trị hàm số - một số hàm đặc biệt", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "Giá trị lớn nhất - giá trị nhỏ nhất", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "Tương giao đồ thị hàm số", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "Tương giao đồ thị hàm số - hàm hợp", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "Tiệm cận", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "Tiệm cận - hàm hợp", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "Ứng dụng hàm số bài toán thực tế", "LT + BT · chữa bài đề thi minh họa"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "Nguyên hàm", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "Tích phân", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "ƯD tích phân - diện tích hình phẳng", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "ƯD tích phân - thể tích", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch đại số", "ƯD tích phân - bài toán chuyển động, bài toán thực tế", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch thống kê, xác suất", "Xác suất có điều kiện", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch thống kê, xác suất", "CT xác suất toàn phần và CT Bayes", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch thống kê, xác suất", "Luyện tập XS có điều kiện", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch thống kê, xác suất", "Mẫu số liệu ghép nhóm", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch hình học đo lường · Vecto trong không gian", "Tọa độ của các phép toán vecto", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch hình học đo lường · Vecto trong không gian", "Phương trình mặt phẳng", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch hình học đo lường · Vecto trong không gian", "Phương trình đường thẳng", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch hình học đo lường · Vecto trong không gian", "Phương trình mặt cầu", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch hình học đo lường · Vecto trong không gian", "Cực trị Oxyz", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch hình học đo lường · Vecto trong không gian", "Góc trong không gian", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch hình học đo lường · Vecto trong không gian", "Khoảng cách trong không gian", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch hình học đo lường · Vecto trong không gian", "Thể tích hình chóp", "LT + BT"], ["Toán", 2, "Level up 12 · Kiến thức lớp 12 trọng tâm", "Hàm số, nguyên hàm – tích phân, xác suất có điều kiện, Oxyz và hình học không gian theo cấu trúc đề mới.", "Đang mở", 40, "Mạch hình học đo lường · Vecto trong không gian", "Thể tích lăng trụ", "LT + BT · tọa độ hóa"], ["Toán", 3, "Final sprint · Tổng ôn và luyện đề", "Tổng ôn theo chuyên đề và luyện đề sát ngày thi.", "Sắp mở", 0, "Tổng ôn", "Tổng ôn hàm số", "BT"], ["Toán", 3, "Final sprint · Tổng ôn và luyện đề", "Tổng ôn theo chuyên đề và luyện đề sát ngày thi.", "Sắp mở", 0, "Tổng ôn", "Tổng ôn Nguyên hàm - tích phân - ứng dụng", "BT"], ["Toán", 3, "Final sprint · Tổng ôn và luyện đề", "Tổng ôn theo chuyên đề và luyện đề sát ngày thi.", "Sắp mở", 0, "Tổng ôn", "Tổng ôn xác suất", "BT"], ["Toán", 3, "Final sprint · Tổng ôn và luyện đề", "Tổng ôn theo chuyên đề và luyện đề sát ngày thi.", "Sắp mở", 0, "Tổng ôn", "Tổng ôn Oxyz", "BT"], ["Toán", 3, "Final sprint · Tổng ôn và luyện đề", "Tổng ôn theo chuyên đề và luyện đề sát ngày thi.", "Sắp mở", 0, "Tổng ôn", "Luyện đề", ""], ["Lịch sử", 1, "Phần 1 · Nền tảng lịch sử", "Các nền văn minh, cách mạng công nghiệp, tiến trình các triều đại phong kiến và những trận đánh lớn.", "Đang mở", 21, "Văn minh thời Cổ - Trung đại", "Văn minh Phương Đông", "Sự hình thành và các thành tựu tiêu biểu của văn minh Ai Cập cổ đại (chữ tượng hình, kim tự tháp), văn minh Ấn Độ (tôn giáo, kiến trúc, toán học), và văn…"], ["Lịch sử", 1, "Phần 1 · Nền tảng lịch sử", "Các nền văn minh, cách mạng công nghiệp, tiến trình các triều đại phong kiến và những trận đánh lớn.", "Đang mở", 21, "Văn minh thời Cổ - Trung đại", "Văn minh Phương Tây", "Khái quát về văn minh Hy Lạp - La Mã cổ đại (nền dân chủ, chữ La-tinh, triết học) và Văn minh Tây Âu thời kì Phục hưng"], ["Lịch sử", 1, "Phần 1 · Nền tảng lịch sử", "Các nền văn minh, cách mạng công nghiệp, tiến trình các triều đại phong kiến và những trận đánh lớn.", "Đang mở", 21, "Các cuộc cách mạng Công Nghiệp", "Thời kì cận đại", "Cách mạng CN lần 1 => 4"], ["Lịch sử", 1, "Phần 1 · Nền tảng lịch sử", "Các nền văn minh, cách mạng công nghiệp, tiến trình các triều đại phong kiến và những trận đánh lớn.", "Đang mở", 21, "Các cuộc cách mạng Công Nghiệp", "Thời kì hiện đại", ""], ["Lịch sử", 1, "Phần 1 · Nền tảng lịch sử", "Các nền văn minh, cách mạng công nghiệp, tiến trình các triều đại phong kiến và những trận đánh lớn.", "Đang mở", 21, "Văn minh Đông Nam Á và các nền văn minh cổ trên đất nước Việt Nam", "Văn minh ĐNA", "Cơ sở hình thành (tự nhiên, cư dân), sự tiếp thu văn minh Ấn Độ - Trung Hoa và các giai đoạn phát triển tiêu biểu"], ["Lịch sử", 1, "Phần 1 · Nền tảng lịch sử", "Các nền văn minh, cách mạng công nghiệp, tiến trình các triều đại phong kiến và những trận đánh lớn.", "Đang mở", 21, "Văn minh Đông Nam Á và các nền văn minh cổ trên đất nước Việt Nam", "Văn minh cổ trên đất nước VN", "Văn minh Văn Lang - Âu Lạc (lưu vực sông Hồng), văn minh Chăm-pa (miền Trung) và văn minh Phù Nam (Nam Bộ)"], ["Lịch sử", 1, "Phần 1 · Nền tảng lịch sử", "Các nền văn minh, cách mạng công nghiệp, tiến trình các triều đại phong kiến và những trận đánh lớn.", "Đang mở", 21, "Văn minh Đông Nam Á và các nền văn minh cổ trên đất nước Việt Nam", "Văn minh Đại Việt", "Tiến trình phát triển và những thành tựu rực rỡ trên các lĩnh vực chính trị, kinh tế, giáo dục, pháp luật"], ["Lịch sử", 1, "Phần 1 · Nền tảng lịch sử", "Các nền văn minh, cách mạng công nghiệp, tiến trình các triều đại phong kiến và những trận đánh lớn.", "Đang mở", 21, "Tiến trình các triều đại phong kiến và các trận đánh lớn", "Thời kì đầu tự chủ (Ngô - Đinh - Tiền Lê)", "Chiến thắng Bạch Đằng đánh tan quân Nam Hán của Ngô Quyền (938) và cuộc kháng chiến chống quân Tống của Lê Hoàn trên sông Lục Đầu, Bạch Đằng (981)"], ["Lịch sử", 1, "Phần 1 · Nền tảng lịch sử", "Các nền văn minh, cách mạng công nghiệp, tiến trình các triều đại phong kiến và những trận đánh lớn.", "Đang mở", 21, "Tiến trình các triều đại phong kiến và các trận đánh lớn", "Triều Lý", "Cuộc kháng chiến chống quân Tống lần 2 (1075 - 1077) với phòng tuyến sông Như Nguyệt do Lý Thường Kiệt lãnh đạo"], ["Lịch sử", 1, "Phần 1 · Nền tảng lịch sử", "Các nền văn minh, cách mạng công nghiệp, tiến trình các triều đại phong kiến và những trận đánh lớn.", "Đang mở", 21, "Tiến trình các triều đại phong kiến và các trận đánh lớn", "Triều Trần - Hồ", "Ba lần kháng chiến chống Mông - Nguyên (1258, 1285, 1287 - 1288) với các trận quyết chiến tại Đông Bộ Đầu, Chương Dương, Hàm Tử, Bạch Đằng . Kháng chiến…"], ["Lịch sử", 1, "Phần 1 · Nền tảng lịch sử", "Các nền văn minh, cách mạng công nghiệp, tiến trình các triều đại phong kiến và những trận đánh lớn.", "Đang mở", 21, "Tiến trình các triều đại phong kiến và các trận đánh lớn", "Triều Lê sơ", "Khởi nghĩa Lam Sơn (1418 - 1427) lật đổ ách đô hộ nhà Minh với các trận Tốt Động - Chúc Động, Chi Lăng - Xương Giang"], ["Lịch sử", 1, "Phần 1 · Nền tảng lịch sử", "Các nền văn minh, cách mạng công nghiệp, tiến trình các triều đại phong kiến và những trận đánh lớn.", "Đang mở", 21, "Tiến trình các triều đại phong kiến và các trận đánh lớn", "Phong trào Tây Sơn", "Lật đổ chúa Nguyễn, Trịnh. Đánh tan 5 vạn quân Xiêm trong trận Rạch Gầm - Xoài Mút (1785) và 29 vạn quân Thanh trong trận Ngọc Hồi - Đống Đa (1789) do…"], ["Lịch sử", 1, "Phần 1 · Nền tảng lịch sử", "Các nền văn minh, cách mạng công nghiệp, tiến trình các triều đại phong kiến và những trận đánh lớn.", "Đang mở", 21, "Tiến trình các triều đại phong kiến và các trận đánh lớn", "Triều Nguyễn", "Xây dựng quốc gia thống nhất (1802). Kháng chiến chống Pháp (1858 - 1884) từ mặt trận Đà Nẵng, Gia Định đến sự sụp đổ của triều đình"], ["Lịch sử", 2, "Phần 2 · Thế giới và Việt Nam cận – hiện đại", "Các chủ đề về cách mạng tư sản, chủ nghĩa xã hội, Đông Nam Á, chiến tranh bảo vệ Tổ quốc, cải cách và biển đảo.", "Đang mở", 9, "Chủ đề 1", "Cách mạng tư sản", ""], ["Lịch sử", 2, "Phần 2 · Thế giới và Việt Nam cận – hiện đại", "Các chủ đề về cách mạng tư sản, chủ nghĩa xã hội, Đông Nam Á, chiến tranh bảo vệ Tổ quốc, cải cách và biển đảo.", "Đang mở", 9, "Chủ đề 1", "Sự phát triển của chủ nghĩa tư bản", ""], ["Lịch sử", 2, "Phần 2 · Thế giới và Việt Nam cận – hiện đại", "Các chủ đề về cách mạng tư sản, chủ nghĩa xã hội, Đông Nam Á, chiến tranh bảo vệ Tổ quốc, cải cách và biển đảo.", "Đang mở", 9, "Chủ đề 2", "Chủ nghĩa xã hội từ 1917 - nay", ""], ["Lịch sử", 2, "Phần 2 · Thế giới và Việt Nam cận – hiện đại", "Các chủ đề về cách mạng tư sản, chủ nghĩa xã hội, Đông Nam Á, chiến tranh bảo vệ Tổ quốc, cải cách và biển đảo.", "Đang mở", 9, "Chủ đề 3", "Quá trình giành độc lập của các quốc gia Đông Nam Á", ""], ["Lịch sử", 2, "Phần 2 · Thế giới và Việt Nam cận – hiện đại", "Các chủ đề về cách mạng tư sản, chủ nghĩa xã hội, Đông Nam Á, chiến tranh bảo vệ Tổ quốc, cải cách và biển đảo.", "Đang mở", 9, "Chủ đề 4", "Khởi nghĩa, chiến tranh giải phóng dân tộc bảo vệ Tổ quốc ở Việt Nam Trước cách mạng tháng 8/1945", ""], ["Lịch sử", 2, "Phần 2 · Thế giới và Việt Nam cận – hiện đại", "Các chủ đề về cách mạng tư sản, chủ nghĩa xã hội, Đông Nam Á, chiến tranh bảo vệ Tổ quốc, cải cách và biển đảo.", "Đang mở", 9, "Ôn tập", "Ôn tập 4 chủ đề đầu", ""], ["Lịch sử", 2, "Phần 2 · Thế giới và Việt Nam cận – hiện đại", "Các chủ đề về cách mạng tư sản, chủ nghĩa xã hội, Đông Nam Á, chiến tranh bảo vệ Tổ quốc, cải cách và biển đảo.", "Đang mở", 9, "Chủ đề 6", "Một số cuộc cải cách lớn", "Một số cuộc cải cách lớn (Hồ Quý Ly, Lê Thánh Tông, Minh Mạng)"], ["Lịch sử", 2, "Phần 2 · Thế giới và Việt Nam cận – hiện đại", "Các chủ đề về cách mạng tư sản, chủ nghĩa xã hội, Đông Nam Á, chiến tranh bảo vệ Tổ quốc, cải cách và biển đảo.", "Đang mở", 9, "Chủ đề 7", "Vị trí biển Đông và quá trình bảo vệ chủ quyền biển đảo của Việt Nam", "Vị trí, tầm quan trọng của Biển Đông; lịch sử xác lập, thực thi và bảo vệ chủ quyền, các quyền và lợi ích hợp pháp của Việt Nam ở Biển Đông"], ["Lịch sử", 2, "Phần 2 · Thế giới và Việt Nam cận – hiện đại", "Các chủ đề về cách mạng tư sản, chủ nghĩa xã hội, Đông Nam Á, chiến tranh bảo vệ Tổ quốc, cải cách và biển đảo.", "Đang mở", 9, "Ôn tập", "Ôn tập 7 chủ đề", ""], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 1 · Thế giới trong và sau chiến tranh lạnh", "Liên hợp quốc", "Khái niệm, Nguyên tắc, .."], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 1 · Thế giới trong và sau chiến tranh lạnh", "Trật tự thế giới trong chiến tranh lạnh", "Nguyên nhân - Diễn Biến - Ý nghĩa"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 1 · Thế giới trong và sau chiến tranh lạnh", "Trật tự thế giới sau chiến tranh lạnh", "Nguyên nhân - Diễn Biến - Ý nghĩa"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 2 · ASEAN và chặng đường lịch sử", "Sự ra đời và phát triển của ASEAN", "Nguyên nhân - Diễn Biến - Ý nghĩa"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 2 · ASEAN và chặng đường lịch sử", "Cộng đồng ASEAN: Từ ý tưởng tới hiện thực", "Nguyên nhân - Diễn Biến - Ý nghĩa"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 3 · Cách mạng tháng Tám chiến tranh bảo vệ dân tộc và chiến tranh bảo vệ tổ quốc Việt Nam", "Cách mạng tháng 8/1945", "Nguyên nhân - Diễn Biến - Ý nghĩa"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 3 · Cách mạng tháng Tám chiến tranh bảo vệ dân tộc và chiến tranh bảo vệ tổ quốc Việt Nam", "Cuộc kháng chiến chống Pháp năm 1945 - 1954", "Nguyên nhân - Diễn Biến - Ý nghĩa"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 3 · Cách mạng tháng Tám chiến tranh bảo vệ dân tộc và chiến tranh bảo vệ tổ quốc Việt Nam", "Cuộc kháng chiến chống Mỹ cứu nước 1954 - 1975", "Nguyên nhân - Diễn Biến - Ý nghĩa"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 3 · Cách mạng tháng Tám chiến tranh bảo vệ dân tộc và chiến tranh bảo vệ tổ quốc Việt Nam", "Đấu tranh bảo vệ Tổ Quốc từ sau tháng 4/1975 - nay và một số bài học lịch sử", "Nguyên nhân - Diễn Biến - Ý nghĩa"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 4 · Công cuộc đổi mới của Việt Nam từ 1986 - nay", "Khái quát công cuộc đổi mới từ 1986 - nay", "Nguyên nhân - Diễn Biến - Ý nghĩa"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 4 · Công cuộc đổi mới của Việt Nam từ 1986 - nay", "Thành tựu cơ bản và bài học của công cuộc đổi mới ở Việt Nam 1986 tới nay", "Nguyên nhân - Diễn Biến - Ý nghĩa"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 5 · Hoạt động đối nội - đối ngoại của Việt Nam thời cận - hiện đại", "Hoạt động đối ngoại của Việt Nam trong đấu tranh giành độc lập dân tộc (Từ thế kỉ XX - cách mạng tháng 8/1945)", "Hành động - Ý nghĩa"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 5 · Hoạt động đối nội - đối ngoại của Việt Nam thời cận - hiện đại", "Hoạt động đối ngoại của Việt Nam trong kháng chiến chống Pháp (1945 - 1954) và Kháng chiến chống Mỹ (1954 - 1975)", "Hành động - Ý nghĩa"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 5 · Hoạt động đối nội - đối ngoại của Việt Nam thời cận - hiện đại", "Hoạt động đối ngoại của Việt Nam từ 1975 - nay", "Hành động - Ý nghĩa"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 6 · Hồ Chí Minh trong lịch sử Việt Nam", "Khái quát cuộc đời và sự nghiệp Hồ Chí Minh", "Khái quát chung"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 6 · Hồ Chí Minh trong lịch sử Việt Nam", "Hồ Chí Minh - Anh hùng giải phóng dân tộc", "Con đường - hành trình của Bác"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 6 · Hồ Chí Minh trong lịch sử Việt Nam", "Dấu ấn HCM trong lòng nhân dân Việt Nam", ""], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 7 · Ôn tập lại lớp 11", "Chủ nghĩa xã hội 1917 - nay", "Tổng quan chung - ôn tập"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 7 · Ôn tập lại lớp 11", "Sự phát triển của CNXH sau WW2 - nay", "Tổng quan chung - ôn tập"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 7 · Ôn tập lại lớp 11", "Khái quát về chiến tranh bảo vệ tổ quốc trong lịch sử Việt Nam", "Tổng quan chung - ôn tập"], ["Lịch sử", 3, "Phần 3 · Lịch sử thế giới và kháng chiến giải phóng dân tộc", "Thế giới trong và sau Chiến tranh lạnh, ASEAN, các cuộc kháng chiến, Đổi mới, đối ngoại và Hồ Chí Minh.", "Đang mở", 25, "Chủ đề 7 · Ôn tập lại lớp 11", "Một số cuộc khởi nghĩa và chiến tranh GPDT trong lịch sử Việt Nam", "Tổng quan chung - ôn tập"], ["Địa lí", 1, "Phần 1 · Địa lí và tự nhiên", "", "Đang mở", 6, "Lý thuyết + bài tập", "Vị trí Địa Lý và Phạm vi lãnh thổ", ""], ["Địa lí", 1, "Phần 1 · Địa lí và tự nhiên", "", "Đang mở", 6, "Lý thuyết + bài tập", "Thiên nhiên nhiệt đới ẩm gió mùa", ""], ["Địa lí", 1, "Phần 1 · Địa lí và tự nhiên", "", "Đang mở", 6, "Ôn tập – kiểm tra", "Ôn tập - Kiểm Tra Giữa Chương", ""], ["Địa lí", 1, "Phần 1 · Địa lí và tự nhiên", "", "Đang mở", 6, "Lý thuyết + bài tập", "Sự phân hóa đa dạng của Thiên Nhiên", ""], ["Địa lí", 1, "Phần 1 · Địa lí và tự nhiên", "", "Đang mở", 6, "Lý thuyết + bài tập", "Vấn đề sử dụng hợp lí tài nguyên thiên nhiên và Bảo vệ môi trường", ""], ["Địa lí", 1, "Phần 1 · Địa lí và tự nhiên", "", "Đang mở", 6, "Ôn tập – kiểm tra", "Ôn tập - Kiểm tra Cuối Chương", ""], ["Địa lí", 2, "Phần 2 · Địa lí và dân cư", "", "Đang mở", 4, "Lý thuyết + bài tập", "Dân số Việt Nam", ""], ["Địa lí", 2, "Phần 2 · Địa lí và dân cư", "", "Đang mở", 4, "Lý thuyết + bài tập", "Lao động và việc làm", ""], ["Địa lí", 2, "Phần 2 · Địa lí và dân cư", "", "Đang mở", 4, "Lý thuyết + bài tập", "Đô thị hóa", ""], ["Địa lí", 2, "Phần 2 · Địa lí và dân cư", "", "Đang mở", 4, "Ôn tập – kiểm tra", "Ôn tập - Kiểm tra Cuối Chương", ""], ["Địa lí", 3, "Phần 3 · Địa lí và các ngành kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Chuyển dịch cơ cấu kinh tế", ""], ["Địa lí", 3, "Phần 3 · Địa lí và các ngành kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Vấn đề phát triển ngành nông nghiệp", ""], ["Địa lí", 3, "Phần 3 · Địa lí và các ngành kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Vấn đề phát triển ngành Lâm nghiệp và ngành Thủy Sản", ""], ["Địa lí", 3, "Phần 3 · Địa lí và các ngành kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Tổ chức lãnh thổ nông nghiệp", ""], ["Địa lí", 3, "Phần 3 · Địa lí và các ngành kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Một số ngành công nghiệp", ""], ["Địa lí", 3, "Phần 3 · Địa lí và các ngành kinh tế", "", "Đang mở", 11, "Ôn tập – kiểm tra", "Ôn tập - Kiểm tra giữa chương", ""], ["Địa lí", 3, "Phần 3 · Địa lí và các ngành kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Tổ chức lãnh thổ công nghiệp", ""], ["Địa lí", 3, "Phần 3 · Địa lí và các ngành kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Vai trò, các nhân tố ảnh hưởng tới sự phát triển và phân bố các ngành dịch vụ", ""], ["Địa lí", 3, "Phần 3 · Địa lí và các ngành kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Giao thông vận tải và bưu chính viễn thông", ""], ["Địa lí", 3, "Phần 3 · Địa lí và các ngành kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Thương mại và du lịch", ""], ["Địa lí", 3, "Phần 3 · Địa lí và các ngành kinh tế", "", "Đang mở", 11, "Ôn tập – kiểm tra", "Ôn tập - Kiểm tra cuối chương", ""], ["Địa lí", 4, "Phần 4 · Địa lí các vùng kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Khai thác thế mạnh ở Trung du và miền núi Bắc Bộ", ""], ["Địa lí", 4, "Phần 4 · Địa lí các vùng kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Phát triển Kinh tế - Xã Hội ở Đồng bằng sông Hồng", ""], ["Địa lí", 4, "Phần 4 · Địa lí các vùng kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Phát triển nông nghiệp - Lâm nghiệp và thủy sản ở Bắc Trung Bộ", ""], ["Địa lí", 4, "Phần 4 · Địa lí các vùng kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Phát triển kinh tế Biển ở Duyên hải Nam Trung Bộ", ""], ["Địa lí", 4, "Phần 4 · Địa lí các vùng kinh tế", "", "Đang mở", 11, "Ôn tập – kiểm tra", "Ôn tập - Kiểm tra giữa chương", ""], ["Địa lí", 4, "Phần 4 · Địa lí các vùng kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Khai thác thế mạnh để phát triển Kinh tế Tây Nguyên", ""], ["Địa lí", 4, "Phần 4 · Địa lí các vùng kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Phát triển kinh tế - xã hội ở Đông Nam Bộ", ""], ["Địa lí", 4, "Phần 4 · Địa lí các vùng kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Sử dụng hợp lí tự nhiên để phát triển kinh tế ở ĐB Sông Cửu Long", ""], ["Địa lí", 4, "Phần 4 · Địa lí các vùng kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Phát triển các vùng kinh tế trọng điểm", ""], ["Địa lí", 4, "Phần 4 · Địa lí các vùng kinh tế", "", "Đang mở", 11, "Lý thuyết + bài tập", "Phát triển kinh tế và đảm bảo quốc phòng an ninh ở Biển Đông và các đảo, quần đảo", ""], ["Địa lí", 4, "Phần 4 · Địa lí các vùng kinh tế", "", "Đang mở", 11, "Ôn tập – kiểm tra", "Ôn tập - Kiểm tra cuối chương", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 1 · Bài 0–7", "Introduction day", "Từ vựng: Food"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 1 · Bài 0–7", "Present Simple & Continuous", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 1 · Bài 0–7", "Present Perfect Simple & Continuous", "Từ vựng: Technology"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 1 · Bài 0–7", "Past Simple & Continuous", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 1 · Bài 0–7", "Past Perfect", "Từ vựng: Sports"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 1 · Bài 0–7", "Future time", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 1 · Bài 0–7", "Prepositions of time and place", "Từ vựng: Food, Technology, Sports"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 1 · Bài 0–7", "Monthly practice test", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 2 · Bài 8–15", "The passive", "Từ vựng: Health"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 2 · Bài 8–15", "Countable and uncountable nouns", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 2 · Bài 8–15", "Articles", "Từ vựng: Social media"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 2 · Bài 8–15", "Pronouns and possessive determiners", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 2 · Bài 8–15", "Relative clauses", "Từ vựng: Nature"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 2 · Bài 8–15", "Questions, question tags", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 2 · Bài 8–15", "Grammar + Vocab review", "Từ vựng: Health, Social media, Nature"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 2 · Bài 8–15", "Monthly practice test", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 3 · Bài 16–23", "Comparatives and superlatives", "Từ vựng: Weather"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 3 · Bài 16–23", "Reported speech", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 3 · Bài 16–23", "Reported questions, orders and requests", "Từ vựng: Business"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 3 · Bài 16–23", "Modal 1: Ability, permission, advice", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 3 · Bài 16–23", "Modal 2: Obligation, probability, possibility", "Từ vựng: Law"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 3 · Bài 16–23", "Modal 3: The modal perfect", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 3 · Bài 16–23", "Grammar + Vocab review", "Từ vựng: Weather, Business, Law"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 3 · Bài 16–23", "Monthly practice test", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 4 · Bài 24–31", "Conditionals 1: Zero, first, second", "Từ vựng: Travel"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 4 · Bài 24–31", "Conditionals 2: Third", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 4 · Bài 24–31", "Direct and indirect objects", "Từ vựng: Shopping"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 4 · Bài 24–31", "-ing and infinitive", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 4 · Bài 24–31", "Both, either, neither, so, nor", "Từ vựng: Movie"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 4 · Bài 24–31", "So, such, too, enough", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 4 · Bài 24–31", "Grammar + Vocab review", "Từ vựng: Travel, Shopping, Movie"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 4 · Bài 24–31", "Monthly practice test", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 5 · Bài 32–35", "Connectives", "Từ vựng: Mixed"], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 5 · Bài 32–35", "The causative", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 5 · Bài 32–35", "Word form", ""], ["Tiếng Anh", 1, "Giai đoạn 1 · Fundamentals – ngữ pháp nền tảng", "Toàn bộ ngữ pháp trọng tâm cho phần Tiếng Anh của đề BCA, mỗi chặng kết thúc bằng bài kiểm tra tháng.", "Đang mở", 36, "Chặng 5 · Bài 32–35", "End-term test", ""]];
+</script>
+<script>
+(function(){
+"use strict";
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const money=n=>Number(n).toLocaleString("vi-VN")+"đ";
+const DAYN={2:"Thứ 2",3:"Thứ 3",4:"Thứ 4",5:"Thứ 5",6:"Thứ 6",7:"Thứ 7",8:"Chủ nhật"};
+const store={get(k){try{return JSON.parse(localStorage.getItem(k)||"null")}catch(e){return null}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}},del(k){try{localStorage.removeItem(k)}catch(e){}}};
+
+/* config text */
+$$("[data-k]").forEach(el=>{const k=el.dataset.k;if(k==="gia1"||k==="gia2")el.textContent=money(CONFIG[k]);else if(CONFIG[k])el.textContent=CONFIG[k];});
+$$("[data-k-href]").forEach(el=>{if(CONFIG[el.dataset.kHref])el.href=CONFIG[el.dataset.kHref];});
+$$("[data-zalo]").forEach(a=>a.href="https://zalo.me/"+CONFIG.zalo);
+
+/* week card + schedule table */
+(function(){
+  const w=$("#week"); let h="";
+  [2,3,4,5,6,7,8].forEach(d=>{
+    const subs=SUBJECTS.filter(s=>s.days.includes(d));
+    h+=`<div class="day"><b>${d===8?"CN":"T"+d}</b>${subs.map(s=>`<span class="chip ${s.cls}">${esc(s.name==="Tiếng Anh"?"Anh":s.name==="Lịch sử"?"Sử":s.name==="Địa lí"?"Địa":s.name)}</span>`).join("")}</div>`;
+  });
+  w.innerHTML=h;
+  $("#sched tbody").innerHTML=SUBJECTS.map(s=>`<tr><td><span class="dot" style="background:${s.color}"></span>${esc(s.name)}</td><td>${s.days.map(d=>DAYN[d]).join(" · ")}</td><td>22:15</td><td>${esc(s.teacher)}</td></tr>`).join("");
+})();
+
+/* team */
+$("#team").innerHTML=TEAM.map(t=>`
+  <article class="doc">
+    <div class="ava">${t.photo?`<img src="${esc(t.photo)}" alt="Ảnh ${esc(t.name)}" loading="lazy">`:esc(t.initials)}</div>
+    <div>
+      <h3>${esc(t.name)}</h3>
+      <div class="role">${esc(t.role)}</div>
+      <div class="tags">${t.tags.map(x=>`<span class="tag">${esc(x)}</span>`).join("")}</div>
+      <div class="star"><b>${esc(t.star.big)}</b><span><strong>${esc(t.star.top)}</strong>${esc(t.star.sub)}</span></div>
+      <ul class="creds">${t.creds.map(c=>`<li><svg aria-hidden="true"><use href="#i-check"/></svg><span>${esc(c[0])}${c[1]?`<em> · ${esc(c[1])}</em>`:""}</span></li>`).join("")}</ul>
+      ${t.note?`<p class="note">${esc(t.note)}</p>`:""}
+    </div>
+  </article>`).join("");
+
+/* roadmap */
+const RM_ORDER=["Toán","Lịch sử","Địa lí","Tiếng Anh"];
+function nest(rows){
+  const out={};
+  rows.forEach(r=>{
+    const [mon,thuTu,gd,moTa,tt,soBuoi,nhom,bai,ghiChu]=r;
+    if(!mon||!bai)return;
+    const m=out[mon]||(out[mon]={phases:[]});
+    let p=m.phases.find(x=>x.thuTu==thuTu&&x.ten===gd);
+    if(!p){p={thuTu:Number(thuTu)||m.phases.length+1,ten:gd,moTa,tt,soBuoi:Number(soBuoi)||0,groups:[]};m.phases.push(p);}
+    let g=p.groups.find(x=>x.ten===nhom); if(!g){g={ten:nhom||"Bài học",bai:[]};p.groups.push(g);}
+    g.bai.push({ten:bai,ghiChu:ghiChu||""});
+  });
+  Object.values(out).forEach(m=>m.phases.sort((a,b)=>a.thuTu-b.thuTu));
+  return out;
+}
+let RM=nest(ROADMAP_ROWS), curMon="Toán";
+function renderTabs(){
+  const mons=RM_ORDER.filter(m=>RM[m]).concat(Object.keys(RM).filter(m=>!RM_ORDER.includes(m)));
+  if(!RM[curMon])curMon=mons[0];
+  $("#rm-tabs").innerHTML=mons.map(m=>{
+    const open=RM[m].phases.filter(p=>p.tt!=="Sắp mở").reduce((s,p)=>s+p.soBuoi,0);
+    return `<button class="tab" role="tab" type="button" aria-selected="${m===curMon}" data-mon="${esc(m)}">${esc(m)} <small>${open?"≈ "+open+" buổi":""}</small></button>`;
+  }).join("");
+  $$("#rm-tabs .tab").forEach(b=>b.addEventListener("click",()=>{curMon=b.dataset.mon;renderTabs();renderRM();}));
+}
+function renderRM(){
+  const m=RM[curMon]; if(!m){$("#rm-panel").innerHTML='<div class="empty">Lộ trình đang được cập nhật.</div>';return;}
+  const sub=SUBJECTS.find(s=>s.name===curMon);
+  const open=m.phases.filter(p=>p.tt!=="Sắp mở");
+  const nb=open.reduce((s,p)=>s+p.soBuoi,0), perWeek=sub?sub.days.length:2;
+  let h=`<div class="rm-sum">${sub?`<span class="pill pill-royal"><i></i>${sub.days.map(d=>DAYN[d]).join(" · ")} · 22:15</span>`:""}<span class="pill pill-muted">${open.length} giai đoạn đang mở · ≈ ${nb} buổi${nb?` · khoảng ${Math.round(nb/perWeek/4.3)} tháng`:""}</span></div><div class="timeline">`;
+  m.phases.forEach((p,i)=>{
+    const soon=p.tt==="Sắp mở";
+    h+=`<article class="phase${soon?" soon":""}" data-n="${i+1}">
+      <div class="phase-h"><h3>${esc(p.ten)}</h3>${soon?`<span class="pill pill-muted"><i></i>Sắp mở</span>`:`<span class="pill pill-mint"><i></i>Nền tảng · đang mở${p.soBuoi?" · ≈ "+p.soBuoi+" buổi":""}</span>`}</div>
+      ${p.moTa?`<p class="desc">${esc(p.moTa)}</p>`:""}
+      <div class="groups">${p.groups.map((g,gi)=>`<details class="grp"${(!soon&&i===0&&gi===0)?" open":""}><summary>${esc(g.ten)}<span>${g.bai.length} bài</span></summary><ol>${g.bai.map(b=>`<li>${esc(b.ten)}${b.ghiChu?`<em>${esc(b.ghiChu)}</em>`:""}</li>`).join("")}</ol></details>`).join("")}</div>
+    </article>`;
+  });
+  $("#rm-panel").innerHTML=h+"</div>";
+}
+renderTabs();renderRM();
+
+/* live data from Apps Script (optional) */
+async function getJSON(action){
+  const ctl=new AbortController(); const t=setTimeout(()=>ctl.abort(),12000);
+  try{const r=await fetch(CONFIG.apiUrl+(CONFIG.apiUrl.includes("?")?"&":"?")+"action="+action,{signal:ctl.signal});if(!r.ok)throw new Error(r.status);return await r.json();}
+  finally{clearTimeout(t)}
+}
+if(CONFIG.apiUrl){
+  getJSON("lotrinh").then(j=>{if(j&&j.ok&&Array.isArray(j.rows)&&j.rows.length){RM=nest(j.rows);renderTabs();renderRM();}}).catch(()=>{});
+  const hn=$("#honor"); hn.innerHTML='<div class="skel"></div><div class="skel"></div>';
+  getJSON("vinhdanh").then(j=>{
+    const list=(j&&j.ok&&Array.isArray(j.items))?j.items:[];
+    if(!list.length){hn.innerHTML='<div class="empty">Bảng vinh danh tháng đầu tiên của lứa mới sẽ cập nhật tại đây.</div>';return;}
+    hn.innerHTML=list.slice(0,8).map(x=>`<div class="honor-item"><span class="medal">${esc(String(x.mon||"").slice(0,3))}</span><div><b>${esc(x.ten)}</b><span>${esc(x.thang)} · ${esc(x.mon)}${x.ghiChu?" · "+esc(x.ghiChu):""}</span></div></div>`).join("");
+  }).catch(()=>{hn.innerHTML='<div class="empty">Chưa tải được bảng vinh danh. Bạn thử tải lại trang sau ít phút.</div>';});
+}
+
+/* ===== dialogs ===== */
+const dlg=$("#reg"), pv=$("#privacy");
+let mode="thu", opener=null;
+function openDlg(d){if(typeof d.showModal==="function"){d.showModal();}else{d.setAttribute("open","");}}
+function closeDlg(d){if(typeof d.close==="function")d.close();else d.removeAttribute("open");if(opener&&d===dlg){opener.focus();}}
+function setMode(m){
+  mode=m;
+  $$(".seg button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.mode===m)));
+  $("#f-thu").hidden=m!=="thu"; $("#f-chinhthuc").hidden=m!=="chinhthuc";
+  $("#f-done").hidden=true; $(".seg").hidden=false; hideErr();
+  $("#reg-title").textContent=m==="thu"?"Đăng ký học thử 2 tuần":"Đăng ký học chính thức";
+  $("#reg-sub").textContent=m==="thu"?"Miễn phí, học như học viên chính thức. Điền 1 phút.":"Dành cho học sinh cùng phụ huynh. Thầy/Cô xác nhận qua Zalo trước khi tính học phí.";
+  const f=$("#f-"+m); f.dataset.t0=String(Date.now()); f.dataset.req=newReq(); restore(f);
+}
+$$("[data-open]").forEach(b=>b.addEventListener("click",()=>{opener=b;setMode(b.dataset.open);openDlg(dlg);setTimeout(()=>{const i=$("#f-"+mode+" input:not(.hp)");if(i)i.focus();},60);}));
+$$(".seg button").forEach(b=>b.addEventListener("click",()=>setMode(b.dataset.mode)));
+$$("[data-close]").forEach(b=>b.addEventListener("click",()=>closeDlg(b.closest("dialog"))));
+[dlg,pv].forEach(d=>d.addEventListener("click",e=>{if(e.target===d)closeDlg(d);}));
+$$("[data-privacy]").forEach(b=>b.addEventListener("click",()=>openDlg(pv)));
+
+/* ===== form helpers ===== */
+function newReq(){try{if(window.crypto&&crypto.randomUUID)return crypto.randomUUID();}catch(e){}return Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,10);}
+const normPhone=s=>{let d=String(s||"").replace(/\D/g,"");if(d.startsWith("84")&&d.length===11)d="0"+d.slice(2);if(d.length===9)d="0"+d;return d;};
+const okPhone=s=>/^0[35789]\d{8}$/.test(normPhone(s));
+const okMail=s=>/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(s||"").trim());
+const okName=s=>{const v=String(s||"").trim();return v.length>=4&&/\s/.test(v)&&!/\d{5,}/.test(v);};
+function fieldOf(el){return el.closest(".f");}
+function mark(el,bad){const f=fieldOf(el);if(f)f.classList.toggle("bad",bad);return !bad;}
+function readForm(f){
+  const o={};$$("input,select",f).forEach(el=>{
+    if(!el.name)return;
+    if(el.type==="checkbox"){if(el.name==="mon"){(o.mon=o.mon||[]);if(el.checked)o.mon.push(el.value);}else o[el.name]=el.checked;}
+    else o[el.name]=el.value.trim();
+  });o.mon=o.mon||[];return o;
+}
+function validate(f){
+  const d=readForm(f);let ok=true,first=null;
+  const chk=(sel,cond)=>{const el=$(sel,f);if(!el)return;const good=mark(el,!cond);if(!good&&!first)first=el;ok=ok&&good;};
+  chk('[name=hoTen]',okName(d.hoTen));
+  chk('[name=sdt]',okPhone(d.sdt));
+  chk('[name=gmail]',okMail(d.gmail));
+  if(f.id==="f-chinhthuc"){
+    chk('[name=truong]',d.truong.length>=3);
+    chk('[name=phHoTen]',okName(d.phHoTen));
+    chk('[name=phSdt]',okPhone(d.phSdt));
+    chk('[name=dongY]',d.noiQuy&&d.camKet&&d.dongY);
+  } else chk('[name=dongY]',!!d.dongY);
+  chk('[name=mon]',d.mon.length>0);
+  if(first)first.focus();
+  return ok?d:null;
+}
+function saveDraft(f){const d=readForm(f);delete d.website;delete d.dongY;delete d.noiQuy;delete d.camKet;delete d.dongYVinhDanh;store.set("kin_bca_draft_"+f.dataset.mode,d);}
+function restore(f){
+  const d=store.get("kin_bca_draft_"+f.dataset.mode)||store.get("kin_bca_draft_"+(f.dataset.mode==="thu"?"chinhthuc":"thu"));if(!d)return;
+  ["hoTen","sdt","gmail","truong","phHoTen","phSdt"].forEach(k=>{const el=$('[name='+k+']',f);if(el&&!el.value&&d[k])el.value=d[k];});
+  ["khoi","mucTieu"].forEach(k=>{const el=$('[name='+k+']',f);if(el&&d[k])el.value=d[k];});
+  if(Array.isArray(d.mon)&&!$$('[name=mon]:checked',f).length)$$('[name=mon]',f).forEach(c=>c.checked=d.mon.includes(c.value));
+  estimate();
+}
+$$("#f-thu,#f-chinhthuc").forEach(f=>{
+  f.addEventListener("input",e=>{const fe=fieldOf(e.target);if(fe&&fe.classList.contains("bad"))fe.classList.remove("bad");saveDraft(f);if(f.id==="f-chinhthuc")estimate();});
+  f.addEventListener("change",()=>{saveDraft(f);if(f.id==="f-chinhthuc")estimate();});
+  f.addEventListener("submit",e=>{e.preventDefault();submit(f);});
+});
+function estimate(){
+  const box=$("#estimate"),mons=$$('#f-chinhthuc [name=mon]:checked').map(c=>c.value);
+  if(!mons.length){box.classList.remove("on");return;}
+  const price=mons.length>=2?CONFIG.gia2:CONFIG.gia1;
+  let lo=0,hi=0;mons.forEach(m=>{const s=SUBJECTS.find(x=>x.key===m);const n=s?s.days.length:2;lo+=n*4;hi+=n*5;});
+  box.innerHTML=`Đơn giá của bạn: <b>${money(price)}/buổi/môn</b>${mons.length>=2?" (ưu đãi từ 2 môn)":""}. Ước tính khoảng <b>${money(lo*price)} – ${money(hi*price)}</b>/tháng, tính theo số buổi lớp thực dạy.`;
+  box.classList.add("on");
+}
+function showErr(html){const a=$("#f-err");a.innerHTML=html;a.classList.add("on");a.scrollIntoView({block:"nearest"});}
+function hideErr(){$("#f-err").classList.remove("on");}
+
+function googleFormUrl(d){
+  const p=new URLSearchParams();p.set("usp","pp_url");
+  if(mode==="thu"){
+    p.set("entry.2010265608","Đăng ký học thử");p.set("entry.1740914982",d.hoTen);p.set("entry.213441445",normPhone(d.sdt));
+    const map={"Toán":"Toán chuyên BCA lớp 10 - 11 - 12: Anh Thanh - Chị Hoa","Sử":"Lịch Sử - Anh Thanh","Địa":"Địa Lý - Anh Thanh","Anh":"Tiếng Anh - Anh Minh"};
+    d.mon.forEach(m=>p.append("entry.1516616575",map[m]));
+  }else{
+    p.set("entry.2010265608","Đăng ký chính thức");p.set("entry.1687344279",d.hoTen);p.set("entry.1081677951",d.truong);
+    p.set("entry.1662102275",d.khoi.startsWith("Khối 12")?"Khối 12":d.khoi);p.set("entry.972868068",normPhone(d.sdt));p.set("entry.918859480",d.gmail);
+    p.set("entry.570909210",d.phHoTen);p.set("entry.1887667442",normPhone(d.phSdt));
+    const map={"Toán":"Toán","Sử":"Sử (Lịch sử)","Địa":"Địa (Địa lý)","Anh":"Tiếng Anh"};d.mon.forEach(m=>p.append("entry.1582657098",map[m]));
+  }
+  return CONFIG.formUrl+"?"+p.toString();
+}
+async function submit(f){
+  hideErr();
+  const d=validate(f); if(!d)return;
+  const btn=$("button[type=submit]",f),label=btn.innerHTML;
+  const payload={loai:mode==="thu"?"hocthu":"chinhthuc",hoTen:d.hoTen,sdt:normPhone(d.sdt),gmail:d.gmail.toLowerCase(),truong:d.truong||"",khoi:d.khoi||"",
+    phHoTen:d.phHoTen||"",phSdt:d.phSdt?normPhone(d.phSdt):"",mon:d.mon,mucTieu:d.mucTieu||"",nguon:d.nguon||"",daHocThu:d.daHocThu||"",
+    dongY:true,dongYVinhDanh:!!d.dongYVinhDanh,website:d.website||"",msOpen:Date.now()-Number(f.dataset.t0||Date.now()),reqId:f.dataset.req||(f.dataset.req=newReq())};
+  if(!CONFIG.apiUrl){window.open(googleFormUrl(d),"_blank","noopener");done(d,true);return;}
+  btn.disabled=true;btn.innerHTML='<span class="spin" aria-hidden="true"></span> Đang gửi…';
+  const ctl=new AbortController();const t=setTimeout(()=>ctl.abort(),20000);
+  try{
+    const r=await fetch(CONFIG.apiUrl,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload),signal:ctl.signal});
+    const j=await r.json();
+    if(!j||!j.ok){throw Object.assign(new Error("server"),{msg:j&&j.msg});}
+    store.del("kin_bca_draft_"+mode);f.reset();f.dataset.req=newReq();done(d,false,j);
+  }catch(err){
+    const why=err&&err.msg?esc(err.msg):"Kết nối tới hệ thống đăng ký đang chậm hoặc bị gián đoạn.";
+    showErr(`<b>Chưa gửi được phiếu.</b> ${why} Thông tin bạn nhập vẫn còn nguyên trên máy. Bấm <b>Gửi lại</b>, hoặc <a href="${esc(googleFormUrl(d))}" target="_blank" rel="noopener">gửi qua Google Form</a>, hoặc <a href="https://zalo.me/${esc(CONFIG.zalo)}" target="_blank" rel="noopener">nhắn Zalo</a>.`);
+  }finally{clearTimeout(t);btn.disabled=false;btn.innerHTML=label.includes("Gửi lại")?label:label.replace("Gửi phiếu","Gửi lại phiếu");}
+}
+function done(d,viaForm,res){
+  $("#f-thu").hidden=true;$("#f-chinhthuc").hidden=true;$(".seg").hidden=true;$("#f-done").hidden=false;
+  const phone=normPhone(d.sdt);const masked=phone.slice(0,4)+" ••• "+phone.slice(-3);
+  $("#done-title").textContent=viaForm?"Bạn hoàn tất trên Google Form nhé":(mode==="thu"?"Đã nhận phiếu học thử":"Đã nhận phiếu đăng ký chính thức");
+  $("#done-text").textContent=viaForm
+    ?"Trang Google Form vừa mở ở tab mới, thông tin đã điền sẵn. Bạn bấm Tiếp và Gửi ở cuối form là xong."
+    :(mode==="thu"?`Trong 24 giờ, anh Thanh sẽ nhắn Zalo số ${masked} gửi link nhóm, lịch học và link Meet. 2 tuần học thử tính từ hôm nay.`
+                  :`Thầy/Cô sẽ nhắn Zalo số ${masked} và số phụ huynh để xác nhận lịch học và học phí trước khi tính tiền.`)+((res&&res.trung)?" Lớp thấy số điện thoại này đã đăng ký trước đó, Thầy/Cô sẽ kiểm tra giúp bạn.":"");
+  $("#f-done").querySelector(".btn").focus();
+}
+})();
+</script>
+</body>
+</html>
