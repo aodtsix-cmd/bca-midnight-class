@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Tổng Ôn Lý Thuyết Nền Tảng · ĐGNL BCA 2027 | BCA Midnight Class</title>
 <meta name="description" content="Lớp online ôn ĐGNL Bộ Công an cho 2K9 (kết hợp HSA): Toán · Lịch sử · Địa lí · Tiếng Anh, 22:15 mỗi tối, tối đa 35 bạn/buổi. Học thử 2 tuần miễn phí.">
-<meta name="theme-color" content="#1E3A8A">
+<meta name="theme-color" content="#2563EB">
+<meta name="color-scheme" content="light">
 <meta property="og:title" content="Tổng Ôn Lý Thuyết Nền Tảng · ĐGNL BCA 2027">
 <meta property="og:description" content="Học thử 2 tuần miễn phí, đủ 4 môn. 65.000đ/buổi, từ 2 môn chỉ 55.000đ/buổi/môn.">
 <meta property="og:type" content="website">
@@ -17,10 +18,10 @@
 :root{
   --navy:#1E3A8A; --navy-hover:#172554; --royal:#2563EB; --sky:#38BDF8; --sun:#F59E0B; --sun-text:#B45309;
   --mint:#10B981; --mint-text:#059669; --alert:#DC2626;
-  --canvas:#F8FAFC; --card:#FFFFFF; --border:#E2E8F0; --border-strong:#CBD5E1; --text:#0F172A; --muted:#64748B;
+  --canvas:#F5FAFF; --card:#FFFFFF; --border:#E2E8F0; --border-strong:#CBD5E1; --text:#0F172A; --muted:#64748B;
   --ink:#1E3A8A; --link:#2563EB; --pillar:#1E3A8A;
   --t-royal:rgba(37,99,235,.08); --t-sky:rgba(56,189,248,.14); --t-sun:rgba(245,158,11,.14); --t-mint:rgba(16,185,129,.12); --t-navy:rgba(30,58,138,.06);
-  --hero-a:rgba(56,189,248,.20); --hero-b:rgba(37,99,235,.10);
+  --hero-a:rgba(56,189,248,.32); --hero-b:rgba(37,99,235,.14);
   --shadow:0 1px 2px rgba(15,23,42,.05),0 8px 24px rgba(15,23,42,.06);
   --shadow-lg:0 2px 4px rgba(15,23,42,.06),0 18px 48px rgba(30,58,138,.12);
   --r:16px; --r-sm:10px;
@@ -29,16 +30,6 @@
   --f-wordmark:"Plus Jakarta Sans","Be Vietnam Pro",sans-serif;
   --ease:cubic-bezier(.16,1,.3,1);
   color-scheme:light;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --canvas:#0B0F19; --card:#0F172A; --border:#1E293B; --border-strong:#334155; --text:#F8FAFC; --muted:#94A3B8;
-    --ink:#38BDF8; --link:#60A5FA; --pillar:#38BDF8; --sun-text:#FBBF24; --mint-text:#34D399;
-    --t-royal:rgba(96,165,250,.12); --t-sky:rgba(56,189,248,.14); --t-sun:rgba(251,191,36,.12); --t-mint:rgba(52,211,153,.12); --t-navy:rgba(56,189,248,.06);
-    --hero-a:rgba(56,189,248,.14); --hero-b:rgba(37,99,235,.14);
-    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35); --shadow-lg:0 18px 48px rgba(0,0,0,.5);
-    color-scheme:dark;
-  }
 }
 :root[data-theme="dark"]{
   --canvas:#0B0F19; --card:#0F172A; --border:#1E293B; --border-strong:#334155; --text:#F8FAFC; --muted:#94A3B8;
@@ -173,7 +164,7 @@ nav.menu a:hover{background:var(--t-royal);color:var(--link)}
 .doc .role{color:var(--link);font-weight:600;font-size:15px;margin:2px 0 10px}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
 .tag{font-size:13px;font-weight:600;padding:5px 10px;border-radius:999px;background:var(--t-navy);color:var(--text);border:1px solid var(--border)}
-.star{display:flex;gap:12px;align-items:center;background:var(--t-sun);border-radius:14px;padding:12px 14px;margin-bottom:12px}
+.star{display:flex;gap:12px;align-items:center;background:linear-gradient(135deg,#FFF7E6,#FFFFFF 85%);border:1.5px solid rgba(245,158,11,.45);border-radius:14px;padding:12px 14px;margin-bottom:12px}
 .star b{font:800 26px/1 var(--f-head);color:var(--sun-text);white-space:nowrap}
 .star span{font-size:14px;line-height:1.4;color:var(--text)}
 .star span strong{display:block}
@@ -899,8 +890,8 @@ const SUBJECTS = [
 const TEAM = [
   {name:"Nguyễn Phúc Thanh", initials:"PT", photo:"", role:"Phụ trách Toán · Lịch sử · Địa lí",
    tags:["Toán","Lịch sử","Địa lí","Giải đáp Lý · Hóa · Anh"],
-   star:{big:"112/150", top:"HSA 2024 · top 1% cả nước", sub:"Lần 1: 105/150 (top 3%)"},
-   creds:[["ĐGNL BCA 2024: 73/100", "Tổng điểm xét tuyển 24,3, trên điểm chuẩn T02 vùng 2 (21,48)"],["Tốt nghiệp THPT: 27,9 điểm",""],["3 năm đồng hành ôn ĐGNL BCA & HSA","Học trò đạt 70–80+ BCA, đỗ T01 · T02 · T04 · T05"]],
+   star:{big:"73/100", top:"ĐGNL BCA 2024", sub:"Xét tuyển 24,3 · vượt chuẩn T02 vùng 2 (21,48)"},
+   creds:[["HSA 2024: 112/150 · top 1% cả nước", "Lần 1: 105/150 (top 3%)"],["Tốt nghiệp THPT: 27,9 điểm",""],["3 năm đồng hành ôn ĐGNL BCA & HSA","Học trò đạt 70–80+ BCA, đỗ T01 · T02 · T04 · T05"]],
    note:"Người lập lộ trình và theo sát từng bạn trong lớp."},
   {name:"Hoàng Thị Vinh Hoa", initials:"VH", photo:"", role:"Giảng dạy Toán",
    tags:["Toán","Sư phạm Toán dạy bằng tiếng Anh"],
@@ -909,8 +900,8 @@ const TEAM = [
    note:"Cùng anh Thanh phụ trách lớp Toán."},
   {name:"Nguyễn Thu Hương", initials:"TH", photo:"", role:"Giảng dạy Tiếng Anh",
    tags:["Tiếng Anh","Học viện Cảnh sát nhân dân (T02)"],
-   star:{big:"86,5", top:"Thủ khoa ĐGNL BCA 2025 của lớp", sub:"Cựu học viên, nay là học viên năm 2 T02"},
-   creds:[["Thủ khoa đầu vào khóa D51, Học viện Cảnh sát nhân dân",""],["IELTS 7.5","Listening 8.5 · Reading 8.5"],["GPA năm nhất 3,7/4,0",""]],
+   star:{big:"86,5", top:"ĐGNL BCA 2025", sub:"Cựu học viên, nay là học viên năm 2 T02"},
+   creds:[["Thủ khoa ĐGNL BCA của khóa HSA EDU 2025",""],["IELTS 7.5","Listening 8.5 · Reading 8.5"],["GPA năm nhất 3,7/4,0",""]],
    note:"Hiểu rõ con đường vào trường Công an vì vừa đi qua đúng kỳ thi này."},
   {name:"Trần Hà Quang Minh", initials:"QM", photo:"", role:"Giảng dạy Tiếng Anh",
    tags:["Tiếng Anh","Đồng dạy cùng chị Thu Hương"],
